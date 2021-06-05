@@ -1,0 +1,32 @@
+{
+  /* scss-scan ---------------------------------------------------------------- */
+  "scss-scan.customPaths": [
+    // 引入 BS4 and BS5 斷點 mixin 做為提示
+    "node_modules/bootstrap/scss/mixins/_breakpoints.scss"
+  ],
+  /* scss-scan ---------------------------------------------------------------- */
+
+  /* SCSS Everywhere ---------------------------------------------------------- */
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-css-class-completion.enableFindUsage": true,
+  "html-css-class-completion.enableScssFindUsage": true,
+  "html-css-class-completion.includeGlobPattern": "**/*.{css,scss,sass,html,jade,pug,vue}",
+  "html-css-class-completion.remoteStyleSheets": [
+    "https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" // bootstrap 5 當下最新
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#7f40bf",
+    "activityBar.activeBorder": "#c78f58",
+    "activityBar.background": "#7f40bf",
+    "editorGroup.border": "#7f40bf",
+    "panel.border": "#7f40bf",
+    "sideBar.border": "#7f40bf",
+    "statusBar.background": "#663399",
+    "statusBarItem.hoverBackground": "#7f40bf",
+    "tab.activeBorder": "#7f40bf",
+    "titleBar.activeBackground": "#663399",
+    "titleBar.inactiveBackground": "#66339999"
+  },
+  "peacock.color": "#639"
+  /* /SCSS Everywhere ---------------------------------------------------------- */
+}
