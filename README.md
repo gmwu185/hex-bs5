@@ -4,8 +4,8 @@
 - [index.html](https://gmwu185.github.io/hex-bs5/week-1-BS5環境建立/index.html)
 
 ## week-2-BS5格線系統教學
-- [exercise-LV-1.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統教學/exercise-LV-1.html)
-- [exercise-LV-3.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統教學/exercise-LV-3.html)
+- [exercise-LV-1.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統/exercise-LV-1.html)
+- [exercise-LV-3.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統/exercise-LV-3.html)
 
 -------
 ## 相關資源：
