@@ -2,7 +2,7 @@
 // scss-docs-start import-stack
 // Configuration
 @import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
+@import "vendors/bs5/variables"; // @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 @import "node_modules/bootstrap/scss/utilities";
 
@@ -48,12 +48,32 @@
 
 
 /* base --------------------------------------------------------------------- */
-
+image {
+  max-width: 100%;
+}
+.logo {
+  width: 110px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-size: cover;
+  background-image: url(~images/logo.jpg);
+}
 /* /base --------------------------------------------------------------------- */
 
+/* layout ------------------------------------------------------------------- */
+
+/* /layout ------------------------------------------------------------------- */
 
 /* utilities ---------------------------------------------------------------- */
-
+// .u-borderBorder {
+//   &--
+//   &--5px {
+//     border-bottom: 5px;
+//     border
+//   }
+// }
 /* /utilities ---------------------------------------------------------------- */
 
 

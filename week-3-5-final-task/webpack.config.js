@@ -64,7 +64,6 @@ module.exports = {
     extensions: ['.js'],
   },
   devServer: {
-    compress: true, 
     port: 3000,
     stats: {
       assets: true,  // 加入資源訊息
@@ -102,7 +101,7 @@ module.exports = {
       errors: true,
     }, // 編譯器錯誤或警告時全屏覆蓋
     hot: false, // webpack 模块熱替換
-    inline: false, // 瀏覽器路徑多 /webpack-dev-server/ 與狀態列 App ready.
+    inline: true, // false 瀏覽器路徑多 /webpack-dev-server/ 與狀態列 App ready.
     noInfo: true, //  --no-info option
     // liveReload: false,
     writeToDisk: true, // 檔案形式輸出 dev-server 程式碼，設定 false 內容只會在記憶體中不會有實體檔案
