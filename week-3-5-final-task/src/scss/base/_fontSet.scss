@@ -1,76 +1,31 @@
 /*----------  material-design-icons  ----------*/
-/* 
-  * material-design-icons iconFont 
-  - 設定文件：https://google.github.io/material-design-icons/
-  - 圖示列表：
-    - https://material.io/tools/icons/?style=baseline 
-    - https://fonts.google.com/icons?selected=Material+Icons
-*/
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url('~assets/fonts/material-design-icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url('~assets/fonts/material-design-icons/MaterialIcons-Regular.woff2') format('woff2'),
-    url('~assets/fonts/material-design-icons/MaterialIcons-Regular.woff') format('woff'),
-    url('~assets/fonts/material-design-icons/MaterialIcons-Regular.ttf') format('truetype');
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
+/** material-design-icons iconFont
+ * 設定文件：https://google.github.io/material-design-icons/
+ * 圖示列表：
+ * - https://material.io/tools/icons/?style=baseline 
+ * - https://fonts.google.com/icons?selected=Material+Icons
+ */
+@import '../vendors/material-design-icons/MaterialIcons-Regular';
 /*----------  /material-design-icons  ----------*/
 
 /* Font Awesome 5 ----------------------------------------------------------- */
-// @font-face {
-//   font-family: 'Font Awesome 5 Brands';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: block;
-//   src: url("~assets/fonts/fa-brands-400.eot");
-//   src:
-//     url("~assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-//     url("~assets/fonts/fa-brands-400.woff2") format("woff2"),
-//     url("~assets/fonts/fa-brands-400.woff") format("woff"),
-//     url("~assets/fonts/fa-brands-400.ttf") format("truetype");
-// }
-// .fab {
-//   font-family: 'Font Awesome 5 Brands';
-//   font-weight: 400;
-// }
-
-// .fa-facebook:before {
-//   content: "\f09a";
-// }
-
-// .fa-facebook-f:before {
-//   content: "\f39e";
-// }
-
-// .fa-facebook-messenger:before {
-//   content: "\f39f";
-// }
-
-// .fa-facebook-square:before {
-//   content: "\f082";
-// }
+/**
+ * 圖示列表
+ * - https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=you&m=free
+ */
+@import '../vendors/fontawesome5/variables';
+@import '../vendors/fontawesome5/brands';
+@import '../vendors/fontawesome5/regular';
+@import '../vendors/fontawesome5/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/mixins';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/core';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/larger';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fixed-width';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/list';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/bordered-pulled';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/animated';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/rotated-flipped';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/stacked';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/icons';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/screen-reader';
 /* /Font Awesome 5 ----------------------------------------------------------- */

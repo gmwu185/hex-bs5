@@ -207,6 +207,12 @@ module.exports = {
       from: "../node_modules/material-design-icons/iconfont",
       to: "../src/assets/fonts/material-design-icons"
     }]),
+    
+    // fortawesome
+    new CopyWebpackPlugin([{
+      from: "../node_modules/@fortawesome/fontawesome-free/webfonts",
+      to: "../src/assets/fonts/fontawesome-free"
+    }]),
     /* /字體與 iconFont ---------------------------------------------------- */
 
     /* HTML 樣版 ------------------------------------------------------------------ */
@@ -218,7 +224,6 @@ module.exports = {
       description: 'Webpack 建立 bootstrap 5 編譯環境',
       Keywords: 'Webpack, bootstrap 5',
       chunks: ['vendor', 'main'],
-      chunks: [],
       minify: {
         collapseWhitespace: false, // true HTML 壓成單行
         removeComments: true, // 刪除註解
