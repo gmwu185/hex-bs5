@@ -2,7 +2,7 @@ import '@babel/polyfill';
 
 /* bootstrap 5 -------------------------------------------------------------- */
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.js';
-window.bootstrap = bootstrap; // 將 bootstrap 指向全域
+// window.bootstrap = bootstrap; // 將 bootstrap 指向全域
 
 /** bootstrap 在任何地方啟用彈出提示框
  * https://bootstrap5.hexschool.com/docs/5.0/components/popovers/
@@ -22,5 +22,3 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 /* /bootstrap 5 -------------------------------------------------------------- */
 
 import 'scss/main.scss';
-
-import 'assets/images/logo.jpg';

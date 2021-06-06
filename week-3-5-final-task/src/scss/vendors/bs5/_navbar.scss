@@ -147,6 +147,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  font-size: 32px;
 }
 
 .navbar-nav-scroll {
@@ -240,9 +241,9 @@
     border-color: $navbar-light-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
-  }
+  // .navbar-toggler-icon {
+  //   background-image: escape-svg($navbar-light-toggler-icon-bg);
+  // }
 
   .navbar-text {
     color: $navbar-light-color;
@@ -291,9 +292,9 @@
     border-color: $navbar-dark-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
-  }
+  // .navbar-toggler-icon {
+  //   background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  // }
 
   .navbar-text {
     color: $navbar-dark-color;
