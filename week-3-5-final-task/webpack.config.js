@@ -105,7 +105,7 @@ module.exports = {
     noInfo: true, //  --no-info option
     // liveReload: false,
     writeToDisk: true, // 檔案形式輸出 dev-server 程式碼，設定 false 內容只會在記憶體中不會有實體檔案
-    compress: true,
+    compress: true,  // 啟用 gzip 壓縮，預設 false
   },
   module: {
     rules: [
@@ -146,7 +146,7 @@ module.exports = {
         include: path.resolve('.'),
       },
       {
-        test: /\.(jpe?g|png|gif)$/,
+        test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
             loader: 'url-loader',
@@ -179,20 +179,37 @@ module.exports = {
         include: path.resolve('src/assets/images'),
         exclude: path.resolve('./node_modules'),
       },
-      {
+      { // 自定義安裝字型檔
         test: /\.(woff|woff2|ttf|eot)$/,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]?[hash:8]',
         },
+        // include: path.resolve('../node_modules/material-design-icons/iconfont'),
         include: path.resolve('src/assets'),
         exclude: path.resolve('./node_modules'),
       },
     ],
   },
   plugins: [
+
     extractCSS,
-    new CopyWebpackPlugin([{ from: 'assets/fonts', to: 'assets/fonts' }]),
+
+    /* 字體與 iconFont ---------------------------------------------------- */
+    /** 
+     * 分別指向對應的 src (源碼) 與 dist (打包編譯檔)，Scss 處理時二邊都需要相同。
+     * Scss 在處理編譯時，取用到 woff, woff2, ttf, eot 檔會透上 lile-loader 進行 src (源碼) 讀取
+     * lile-loader 讀取後會輸出字型檔在 dist (打包編譯檔)，產生檔案讓瀏覽器取用字型
+    */
+    
+    // material-design-icons
+    new CopyWebpackPlugin([{
+      from: "../node_modules/material-design-icons/iconfont",
+      to: "../src/assets/fonts/material-design-icons"
+    }]),
+    /* /字體與 iconFont ---------------------------------------------------- */
+
+    /* HTML 樣版 ------------------------------------------------------------------ */
     new HtmlWebpackPlugin({
       title: 'Webpack 建立 bootstrap 5 編譯環境',
       filename: 'index.html',
@@ -211,5 +228,7 @@ module.exports = {
         useShortDoctype: true, // 使用簡短的文檔類型
       },
     }),
+    /* /HTML 樣版 ------------------------------------------------------------------ */
+    
   ],
 };

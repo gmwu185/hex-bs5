@@ -1,3 +1,22 @@
+
+
+/*=============================================
+=                   base                   =
+=============================================*/
+
+@import 'base/fontSet';
+image {
+  max-width: 100%;
+}
+
+/*============  End of base  =============*/
+
+
+
+/*=============================================
+=                   vendors                   =
+=============================================*/
+
 /* bootstrap 5 -------------------------------------------------------------- */
 // scss-docs-start import-stack
 // Configuration
@@ -20,7 +39,8 @@
 @import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/button-group";
 @import "node_modules/bootstrap/scss/nav";
-@import "node_modules/bootstrap/scss/navbar";
+@import "vendors/bs5/navbar";
+// @import "node_modules/bootstrap/scss/navbar";
 @import "node_modules/bootstrap/scss/card";
 @import "node_modules/bootstrap/scss/accordion";
 @import "node_modules/bootstrap/scss/breadcrumb";
@@ -46,11 +66,24 @@
 // scss-docs-end import-stack
 /* /bootstrap 5 -------------------------------------------------------------- */
 
+/*============  End of vendors  =============*/
 
-/* base --------------------------------------------------------------------- */
-image {
-  max-width: 100%;
-}
+
+
+/*=============================================
+=                   layout                   =
+=============================================*/
+
+
+
+/*============  End of layout  =============*/
+
+
+
+/*=============================================
+=                   components                   =
+=============================================*/
+
 .logo {
   width: 110px;
   height: 40px;
@@ -60,23 +93,15 @@ image {
   background-size: cover;
   background-image: url(~images/logo.jpg);
 }
-/* /base --------------------------------------------------------------------- */
 
-/* layout ------------------------------------------------------------------- */
-
-/* /layout ------------------------------------------------------------------- */
-
-/* utilities ---------------------------------------------------------------- */
-// .u-borderBorder {
-//   &--
-//   &--5px {
-//     border-bottom: 5px;
-//     border
-//   }
-// }
-/* /utilities ---------------------------------------------------------------- */
+/*============  End of components  =============*/
 
 
-/* components --------------------------------------------------------------- */
 
-/* /components --------------------------------------------------------------- */
+/*=============================================
+=                   utilities                   =
+=============================================*/
+
+
+
+/*============  End of utilities  =============*/
