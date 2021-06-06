@@ -9,8 +9,7 @@
 /*----------  /material-design-icons  ----------*/
 
 /* Font Awesome 5 ----------------------------------------------------------- */
-/**
- * 圖示列表
+/** 圖示列表
  * - https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=you&m=free
  */
 @import '../vendors/fontawesome5/variables';
@@ -29,3 +28,25 @@
 @import 'node_modules/@fortawesome/fontawesome-free/scss/icons';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/screen-reader';
 /* /Font Awesome 5 ----------------------------------------------------------- */
+
+/* Google Fonts ------------------------------------------------------------- */
+/** 思源黑體 (Regular, Medium, Bold):
+ * - Noto Sans CJK TC: (非 webFont 字型)
+ *   - https://www.google.com/get/noto/#sans-hant
+ *   - https://www.google.com/get/noto/help/cjk/
+ *   - https://techmoon.xyz/noto-sans-tc/ (WebFont – Noto San TC 與 Noto Sans CJK 差別)
+ * - Noto Sans TC:
+ *   - https://fonts.google.com/specimen/Noto+Sans+TC
+ */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+.u-fontFamily--NotoSansTC {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+/** Baloo Tamma 2 (SemiBold)
+ * - https://fonts.google.com/specimen/Baloo+Tamma+2
+ */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap');
+.u-fontFamily--BalooTamma2 {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+/* Google Fonts ------------------------------------------------------------- */
