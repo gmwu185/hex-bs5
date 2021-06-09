@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="<%= htmlWebpackPlugin.options.viewport %>" />
+    <meta name="viewport" content="<%= htmlWebpackPlugin.options.viewport %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.Keywords %>" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-primary border-5 py-md-4 mb-5 sticky-top">
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-white
+        border-bottom border-primary border-5
+        py-md-4
+        mb-5
+        sticky-top
+      "
+    >
       <div class="container">
         <a class="navbar-brand logo ms-1 ms-sm-0 me-6" href="index.html"></a>
         <button
@@ -21,7 +33,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon material-icons">menu</span>
+          <span class="navbar-toggler-icon material-icons text-secondary">menu</span>
         </button>
         <div class="collapse navbar-collapse py-3 py-md-0" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center text-lg-start">
@@ -44,236 +56,20 @@
     </nav>
     <div class="container pb-5">
       <div class="row">
-        <div class="col-12 mb-3 d-md-flex  justify-content-center">
-          <button
-            type="button"
-            class="btn btn-lg btn-danger m-1"
-            data-bs-toggle="popover"
-            title="Popover title"
-            data-bs-content="And here's some amazing content. It's very engaging. Right?"
-          >
-            Click to toggle popover
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary m-1"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Tooltip on top"
-          >
-            Tooltip on top
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary m-1"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            title="Tooltip on right"
-          >
-            Tooltip on right
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary m-1"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Tooltip on bottom"
-          >
-            Tooltip on bottom
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary m-1"
-            data-bs-toggle="tooltip"
-            data-bs-placement="left"
-            title="Tooltip on left"
-          >
-            Tooltip on left
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12 mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--a1"></div>
-            <div class="card-body">
-              <h5 class="card-title">這是 Google Font 測試區</h5>
-              <h5 class="h5">思源黑體 (Noto Sans TC)</h5>
-              <p class="card-text">
-                <span class="u-fontFamily--NotoSansTC h2 fw-bold u-textSpacing--3">拍出會動的照片｜LivePhotos 魔法拍立得</span>
-              </p>
-              <h5 class="h5">Baloo Tamma 2 (SemiBold)</h5>
-              <p class="card-text">
-                <span class="u-fontFamily--BalooTamma2 h2">$280,047</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-12 mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--a1"></div>
-            <div class="card-body">
-              <h5 class="card-title">這是 fontawesome 測試區</h5>
-              <p class="card-text">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-youtube"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-12 mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--a1"></div>
-            <div class="card-body">
-              <h5 class="card-title">這是 material-design-icons 測試區</h5>
-              <p class="card-text">
-                <span class="material-icons">
-                  menu
-                </span>
-                <span class="material-icons">
-                  search
-                </span>
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--b2"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat2"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mb-4">
-          <div class="card">
-            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--cat3"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="col-12 mb-3">
+          <div class="col-12">
+            <span class="badge bg-secondary mb-1">魔法科技</span>
+            <h1 class="h2 fw-bold text-dark">
+              <span class="d-inline-block">拍出會動的照片｜</span>
+              <span class="d-inline-block">LivePhotos 魔法拍立得</span>
+            </h1>
+            <h5 class="h5">Baloo Tamma 2 (SemiBold)</h5>
+            <p>
+              <span class="u-fontFamily--BalooTamma2 h2">$280,047</span>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- <script src="./assets/js/vendor.js"></script>
-    <script src="./assets/js/main.js"></script> -->
-    <script></script>
   </body>
 </html>

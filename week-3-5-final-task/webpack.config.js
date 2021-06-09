@@ -217,9 +217,26 @@ module.exports = {
 
     /* HTML 樣版 ------------------------------------------------------------------ */
     new HtmlWebpackPlugin({
-      title: 'Webpack 建立 bootstrap 5 編譯環境',
+      title: '拼拼｜拍出會動的照片｜LivePhotos 魔法拍立得｜群眾募資平台',
       filename: 'index.html',
       template: 'html/index.html',
+      viewport: 'width=device-width, initial-scale=1.0', // 'width=640, user-scalable=no',
+      description: '拍出會動的照片｜LivePhotos 魔法拍立得',
+      Keywords: '拍立得, LivePhotos, 動態照片拍立得, 募資平台, 魔法科技',
+      chunks: ['vendor', 'main'],
+      minify: {
+        collapseWhitespace: false, // true HTML 壓成單行
+        removeComments: true, // 刪除註解
+        removeRedundantAttributes: true, // 刪除多餘的屬性
+        removeScriptTypeAttributes: true, // 刪除腳本類型屬性
+        removeStyleLinkTypeAttributes: true, // 刪除樣式鏈接類型屬性
+        useShortDoctype: true, // 使用簡短的文檔類型
+      },
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack 建立 bootstrap 5 編譯環境',
+      filename: 'display.html',
+      template: 'html/display.html',
       viewport: 'width=device-width, initial-scale=1.0', // 'width=640, user-scalable=no',
       description: 'Webpack 建立 bootstrap 5 編譯環境',
       Keywords: 'Webpack, bootstrap 5',

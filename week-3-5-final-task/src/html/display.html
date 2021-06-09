@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-white
+        border-bottom border-primary border-5
+        py-md-4
+        mb-5
+        sticky-top
+      "
+    >
+      <div class="container">
+        <a class="navbar-brand logo ms-1 ms-sm-0 me-6" href="index.html"></a>
+        <button
+          class="navbar-toggler border-0 me-n3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon material-icons text-secondary">menu</span>
+        </button>
+        <div class="collapse navbar-collapse py-3 py-md-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center text-lg-start">
+            <li class="nav-item">
+              <a class="nav-link px-6" aria-current="page" href="#">關於</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-6" href="#">挖寶</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-6" href="#">我有個大膽的想法</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <button class="btn btn-primary rounded-pill px-8 me-4" type="submit">登入</button>
+            <button class="btn btn-outline-secondary rounded-pill px-8" type="submit">註冊</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container pb-5">
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">色彩 (Color)</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-primary">primary (#FFDF65 / $gold)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-secondary text-white">secondary (#858377 / $darkKhaki)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-success text-white">success</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-danger text-white">danger (#FF785E / $lightSalmon)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-warning text-dark">warning</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-info text-dark">info</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-light text-dark">light (#F8F9FA / $ghostWhite)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-dark text-white">dark (#636057 / $darkSlateGray)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-gray text-white">gray (#636057 / $olive)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-dimSlateGray text-white">dimSlateGray (#636057 / $dimSlateGray)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-slateGray text-white">slateGray (#53524F / $slateGray)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">顏色 (Colors)</h2>
+              <div class="d-inline-flex flex-wrap">
+                <p class="text-primary me-3 mb-3">.text-primary</p>
+                <p class="text-secondary me-3 mb-3">.text-secondary</p>
+                <p class="text-success me-3 mb-3">.text-success</p>
+                <p class="text-danger me-3 mb-3">.text-danger</p>
+                <p class="text-warning bg-dark me-3 mb-3">.text-warning</p>
+                <p class="text-info bg-dark me-3 mb-3">.text-info</p>
+                <p class="text-light bg-dark me-3 mb-3">.text-light</p>
+                <p class="text-dark me-3 mb-3">.text-dark</p>
+                <p class="text-body me-3 mb-3">.text-body</p>
+                <p class="text-muted me-3 mb-3">.text-muted</p>
+                <p class="text-white bg-dark me-3 mb-3">.text-white</p>
+                <p class="text-black-50 me-3 mb-3">.text-black-50</p>
+                <p class="text-white-50 bg-dark me-3 mb-3">.text-white-50</p>
+                <p class="me-3 mb-3">一般文字 ($body-color -> $dimSlateGray / #494846)</p>
+              </div>
+              <hr>
+              <h3 class="h5 mb-2">表單 (Forms) / 驗證 (Validation)</h3>
+              <ul class="mb-3">
+                <li>($input-placeholder-color -> $silver / #999999)</li>
+                <li>($input-color -> $silverLight / #F7F7F7)</li>
+                <li>($input-border-color -> transparent)</li>
+                <li>($form-select-color -> $silver / #999999)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-xl-12">
+          <div class="card">
+            <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--a1"></div>
+            <div class="card-body">
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">字體與 iconFont 設定</h2>
+              <div class="row">
+                <div class="col-mb mb-3">
+                  <h3 class="h5">思源黑體 (Noto Sans TC) (<a href="https://fonts.google.com/specimen/Noto+Sans+TC" target="new">連結</a>)</h3>
+                  <p class="card-text u-fontFamily--NotoSansTC h3 fw-bold u-textSpacing--3">
+                    拍出會動的照片｜LivePhotos 魔法拍立得 (h3)
+                  </p>
+                  <p class="card-text u-fontFamily--NotoSansTC h4 fw-bold u-textSpacing--3">
+                    拍出會動的照片｜LivePhotos 魔法拍立得 (h4)
+                  </p>
+                  <p class="card-text u-fontFamily--NotoSansTC h5 fw-bold u-textSpacing--3">
+                    拍出會動的照片｜LivePhotos 魔法拍立得 (h5)
+                  </p>
+                  <p class="card-text u-fontFamily--NotoSansTC h6 fw-bold u-textSpacing--3">
+                    拍出會動的照片｜LivePhotos 魔法拍立得 (h6)
+                  </p>
+                </div>
+                <div class="col-mb mb-3">
+                  <h3 class="h5">Baloo Tamma 2 (<a href="https://fonts.google.com/specimen/Baloo+Tamma+2" target="new">連結</a>)</h3>
+                  <p class="card-text u-fontFamily--BalooTamma2 h3 fw-bold u-textSpacing--3">
+                    $280,047 (h3)
+                  </p>
+                  <p class="card-text u-fontFamily--BalooTamma2 h4 fw-bold u-textSpacing--3">
+                    $280,047 (h4)
+                  </p>
+                  <p class="card-text u-fontFamily--BalooTamma2 h5 fw-bold u-textSpacing--3">
+                    $280,047 (h5)
+                  </p>
+                  <p class="card-text u-fontFamily--BalooTamma2 h6 fw-bold u-textSpacing--3">
+                    $280,047 (h6)
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h3 class="h5">fontawesome (<a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="new">連結</a>)</h3>
+                  <p class="card-text">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="far fa-comment-dots"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-share-alt"></i>
+                  </p>
+                </div>
+                <div class="col">
+                  <h3 class="h5">material-design-icons (<a href="https://fonts.google.com/icons?selected=Material+Icons" target="new">連結</a>)</h3>
+                  <p class="card-text">
+                    <span class="material-icons">menu</span>
+                    <span class="material-icons">search</span>
+                    <span class="material-icons">unfold_more</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="selectEx" class="form-label">
+                    贊助方案
+                  </label>
+                  <select class="form-select" id="selectEx" aria-label="Default select example">
+                    <option value="" selected disabled>請選擇一個方案</option>
+                    <option value="1">方案一</option>
+                    <option value="2">方案二</option>
+                    <option value="3">方案三</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">
+                    收件人姓名
+                  </label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="請輸入姓名">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationServer03" class="form-label">連絡信箱</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                    請輸入正確的郵件格式
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">彈出提示框 (Popovers)</h2>
+              <button
+                type="button"
+                class="btn btn-lg btn-danger m-1"
+                data-bs-toggle="popover"
+                title="Popover title"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+              >
+                Click to toggle popover
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary m-1"
+                data-bs-toggle="popover"
+                title="Popover title"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+              >
+                Click to toggle popover
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-slateGray m-1"
+                data-bs-toggle="popover"
+                title="Popover title"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+              >
+                Click to toggle popover
+              </button>
+              <hr />
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">工具提示框 (Tooltips)</h2>
+              <button
+                type="button"
+                class="btn btn-secondary m-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Tooltip on top"
+              >
+                Tooltip on top
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary m-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Tooltip on right"
+              >
+                Tooltip on right
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary m-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Tooltip on bottom"
+              >
+                Tooltip on bottom
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary m-1"
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                title="Tooltip on left"
+              >
+                Tooltip on left
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
