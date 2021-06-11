@@ -238,9 +238,9 @@ $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
 $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  true !default;  // 全局啟用 RFS.
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     true !default;  // false !default;
+$enable-negative-margins:     true !default;  // false !default; // 負的 margin
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -483,12 +483,24 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: 12px,
+  2: 14px,
+  3: 16px,
+  4: 18px,
+  5: 20px,
+  6: 22px,
+  7: 24px,
+  8: 26px,
+  9: 28px,
+  10: 30px,
+  11: 32px,
+  
+  // 1: $h1-font-size,
+  // 2: $h2-font-size,
+  // 3: $h3-font-size,
+  // 4: $h4-font-size,
+  // 5: $h5-font-size,
+  // 6: $h6-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -658,7 +670,7 @@ $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
-$btn-border-width:            $input-btn-border-width !default;
+$btn-border-width:            2px !default;  // $input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
@@ -1325,7 +1337,7 @@ $progress-font-size:                $font-size-base * .75 !default;
 $progress-bg:                       $gray-200 !default;
 $progress-border-radius:            $border-radius !default;
 $progress-box-shadow:               $box-shadow-inset !default;
-$progress-bar-color:                $white !default;
+$progress-bar-color:                $secondary !default;  // $white !default;
 $progress-bar-bg:                   $primary !default;
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;

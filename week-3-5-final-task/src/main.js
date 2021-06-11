@@ -22,3 +22,21 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 /* /bootstrap 5 -------------------------------------------------------------- */
 
 import 'scss/main.scss';
+
+import 'images/hezuo.svg';
+import 'images/icon_good01.svg';
+import 'images/icon_good02.svg';
+import 'images/icon_good03.svg';
+import 'images/icon_good04.svg';
+import 'images/icon_heart.svg';
+import 'images/img.jpg';
+import 'images/news01.jpg';
+import 'images/news02.jpg';
+import 'images/news03.jpg';
+import 'images/p1.jpg';
+import 'images/p2.jpg';
+import 'images/plan_img.jpg';
+import 'images/produt_image.jpg';
+import 'images/store_img.jpg';
+import 'images/user_img01.jpg';
+import 'images/user_img02.jpg';

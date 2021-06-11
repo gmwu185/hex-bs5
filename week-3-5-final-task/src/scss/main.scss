@@ -24,7 +24,8 @@ image {
 @import "vendors/bs5/variables";
 // @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/utilities";
+@import "vendors/bs5/utilities";
+// @import "node_modules/bootstrap/scss/utilities";
 
 // Layout & components
 @import "node_modules/bootstrap/scss/root";
@@ -66,6 +67,40 @@ image {
 // Utilities
 @import "node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
+
+// BS 權重獨立
+.btn {
+  &-entity--hover {
+    color: $olive;
+    &:hover, &:focus {
+      background-color: $lightSalmon;
+      border-color: $lightSalmon;
+      color: $white;
+    }
+  }
+  &-outline--hover {
+    color: $darkKhaki;
+    &:hover, &:focus {
+      background-color: $gold;
+      border-color: $gold;
+      color: $darkKhaki
+    }
+    &:hover, &:focus {
+      .faIcon {
+        color: $lightSalmon;
+      }
+    }
+  }
+  &-lg {
+    line-height: 24px;
+    @include media-breakpoint-up(lg) {
+      line-height: 24px;
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+  }
+}
+// /BS 權重獨立
 /* /bootstrap 5 -------------------------------------------------------------- */
 
 /*============  End of vendors  =============*/
@@ -95,7 +130,32 @@ image {
   background-size: cover;
   background-image: url(~images/logo.jpg);
 }
-
+.productCover {
+  overflow: hidden;
+  border-radius: 30px;
+  @include media-breakpoint-down(md) {
+    border-radius: 8px;
+  }
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--certification {
+    background-image: url(~images/icon_good01.svg);
+  }
+  &--great {
+    background-image: url(~images/icon_good02.svg);
+  }
+  &--idea {
+    background-image: url(~images/icon_good03.svg);
+  }
+  &--popularityKing {
+    background-image: url(~images/icon_good04.svg);
+  }
+}
 /*============  End of components  =============*/
 
 
