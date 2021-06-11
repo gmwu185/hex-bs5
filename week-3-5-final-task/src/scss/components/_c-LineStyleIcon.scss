@@ -1,0 +1,21 @@
+.c-LineStyleIcon {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--certification {
+    background-image: url(~images/icon_good01.svg);
+  }
+  &--great {
+    background-image: url(~images/icon_good02.svg);
+  }
+  &--idea {
+    background-image: url(~images/icon_good03.svg);
+  }
+  &--popularityKing {
+    background-image: url(~images/icon_good04.svg);
+  }
+}

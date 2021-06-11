@@ -23,9 +23,9 @@ module.exports = {
   /** Webpack 前端打包工具 - 依照指定環境挑選適合的 SourceMap 類型
    * https://awdr74100.github.io/2020-04-02-webpack-devtool/
    * 'source-map', // 只有此類型的 sourcemap 完全支援
-   * 'hidden-source-map'
+   * 'hidden-source-map' / cheap-module-source-map / source-map
    */
-  // devtool: (process.env.NODE_ENV === 'development') ? 'cheap-module-source-map' : 'false',
+  devtool: (process.env.NODE_ENV === 'development') ? 'cheap-module-source-map' : 'false',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './assets/js/[name].js?[hash:8]',
@@ -127,13 +127,13 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              // sourceMap: true, // 開啟 sourcemap 支持
+              sourceMap: true, // 開啟 sourcemap 支持
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              // sourceMap: true, // 開啟 sourcemap 支持
+              sourceMap: true, // 開啟 sourcemap 支持
             },
           },
         ]),

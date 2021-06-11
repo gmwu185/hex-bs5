@@ -316,7 +316,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $secondary !default;  // $primary !default;
+$link-color:                              $lightSalmon !default;  // $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -685,7 +685,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           $border-radius !default;  // $border-radius !default;
-$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-sm:        8px !default;  // $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;

@@ -9,7 +9,6 @@
     <meta name="keywords" content="<%= htmlWebpackPlugin.options.Keywords %>" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="shortcut icon" href="#" />
-    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-primary border-5 py-md-4 sticky-top">
@@ -54,7 +53,7 @@
               <span class="d-inline-block">拍出會動的照片｜</span><span class="d-inline-block">LivePhotos 魔法拍立得</span>
             </h1>
             <div class="row">
-              <div class="col-md-7 mb-4">
+              <div class="col-lg-7 mb-4">
                 <div class="productCover">
                   <img
                     class="img-fluid rounded-3"
@@ -63,7 +62,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-lg-5">
                 <small class="lh-25 fw-400 text-gray"><span class="d-inline-block">目標</span> <span class="u-fontFamily--BalooTamma2 d-inline-block align-middle">$600,000</span></small>
                 <p class="u-fontFamily--BalooTamma2 fs-11 lh-56 fw-600 mb-0 text-slateGray">$280,047</p>
                 <div class="progress rounded-pill mb-2">
@@ -88,18 +87,22 @@
                     <p class="fs-11"><span class="u-fontFamily--BalooTamma2 fw-600">27</span> <span class="fs-7 fw-700">天</span></p>
                   </div>
                 </div>
-                <ul class="list-unstyled list-group list-group-horizontal mb-4">
-                  <li>
-                    <div class="icon icon--popularityKing"></div>
+                <ul class="list-unstyled list-group list-group-horizontal mb-4 justify-content-between justify-content-lg-start">
+                  <li class="c-responsiveTip">
+                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--popularityKing mr-2"></span>
+                    <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">認證</span><span class="d-inline-block">標章</span></span>
                   </li>
-                  <li>
-                    <div class="icon icon--certification"></div>
+                  <li class="c-responsiveTip">
+                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--certification mr-2"></span>
+                    <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">品質</span><span class="d-inline-block">保證</span></span>
                   </li>
-                  <li>
-                    <div class="icon icon--great"></div>
+                  <li class="c-responsiveTip">
+                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--great mr-2"></span>
+                    <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">原生</span><span class="d-inline-block">創意</span></span>
                   </li>
-                  <li>
-                    <div class="icon icon--idea"></div>
+                  <li class="c-responsiveTip">
+                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--idea mr-2"></span>
+                    <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">人氣王</span></span>
                   </li>
                 </ul>
                 <div class="bg-white p-4 border-start border-3 border-primary p-4 mb-4 mb-lg-6">
@@ -109,13 +112,13 @@
                 </div>
                 <ul class="list-unstyled list-group list-group-horizontal d-flex flex-wrap w-100">
                   <li class="w-100">
-                    <a href="#" class="btn btn-lg btn-primary btn-entity--hover rounded-pill d-block  mb-2">贊助專案</a>
+                    <a href="#" class="btn btn-lg btn-primary rounded-pill d-block mb-2">贊助專案</a>
                   </li>
                   <li class="flex-grow-1">
-                    <a href="#" class="btn btn-lg btn-outline-secondary btn-outline--hover rounded-pill d-block me-1 "><i class="fas fa-heart faIcon me-2"></i>追蹤專案</a>
+                    <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill d-block me-1 "><i class="fas fa-heart faIcon me-2"></i>追蹤專案</a>
                   </li>
                   <li class="w-50 w-lg-40">
-                    <a href="#" class="btn btn-lg btn-outline-secondary btn-outline--hover rounded-pill d-block ms-1"><i class="fas fa-share-alt faIcon me-2"></i>分享</a>
+                    <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill d-block ms-1"><i class="fas fa-share-alt faIcon me-2"></i>分享</a>
                   </li>
                 </ul>
               </div>
@@ -124,5 +127,34 @@
         </div>
       </div>
     </header>
+    <nav class="bg-white">
+      <div class="container">
+        <ul class="nav justify-content-between mx-n3 mx-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">專案介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">常見問答</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">目前進度</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">留言</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <article>
+      <section>
+        <h2>施了魔法的照片</h2>
+      </section>
+      <section>
+        <h2>選擇一個方案來支持</h2>
+      </section>
+      <section>
+        <h2>贊助專案</h2>
+      </section>
+    </article>
   </body>
 </html>

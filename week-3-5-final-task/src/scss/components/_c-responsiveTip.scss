@@ -1,0 +1,62 @@
+/** CSS tip
+ * https://www.w3schools.com/css/css_tooltip.asp
+ * 避免與 BS tooltip 同名使用
+ */
+$tipBgColor: $dimSlateGray;
+.c-responsiveTip {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 8px;
+  @include media-breakpoint-up(md) {
+    margin-right: 24px;
+    position: relative;
+    display: inline-block;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    @include media-breakpoint-up(md) {
+      width: 24px;
+      height: 24px;
+      margin-right: 25px;
+      margin-right: 0;
+    }
+  }
+  .c-responsiveTip__text {
+    color: $olive;
+    @include media-breakpoint-up(md) {
+      color: $gold;
+      visibility: hidden;
+      background-color: $tipBgColor;
+      text-align: center;
+      border-radius: 4px;
+      padding: 4px 12px;
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 140%;
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 100%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: $tipBgColor transparent transparent transparent;
+      }
+    }
+  }
+  &:hover .c-responsiveTip__text {
+    visibility: visible;
+  }
+}
+// /css-tooltip

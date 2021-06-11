@@ -70,7 +70,7 @@ image {
 
 // BS 權重獨立
 .btn {
-  &-entity--hover {
+  &-primary {
     color: $olive;
     &:hover, &:focus {
       background-color: $lightSalmon;
@@ -78,7 +78,7 @@ image {
       color: $white;
     }
   }
-  &-outline--hover {
+  &-outline-secondary {
     color: $darkKhaki;
     &:hover, &:focus {
       background-color: $gold;
@@ -120,7 +120,6 @@ image {
 /*=============================================
 =                   components                   =
 =============================================*/
-
 .logo {
   width: 110px;
   height: 40px;
@@ -137,25 +136,10 @@ image {
     border-radius: 8px;
   }
 }
-.icon {
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  &--certification {
-    background-image: url(~images/icon_good01.svg);
-  }
-  &--great {
-    background-image: url(~images/icon_good02.svg);
-  }
-  &--idea {
-    background-image: url(~images/icon_good03.svg);
-  }
-  &--popularityKing {
-    background-image: url(~images/icon_good04.svg);
-  }
-}
+
+@import 'components/c-LineStyleIcon';
+@import 'components/c-responsiveTip';
+
 /*============  End of components  =============*/
 
 
