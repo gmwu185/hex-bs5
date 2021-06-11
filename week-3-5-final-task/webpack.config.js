@@ -25,7 +25,7 @@ module.exports = {
    * 'source-map', // 只有此類型的 sourcemap 完全支援
    * 'hidden-source-map'
    */
-  devtool: (process.env.NODE_ENV === 'development') ? 'cheap-module-source-map' : 'false',
+  // devtool: (process.env.NODE_ENV === 'development') ? 'cheap-module-source-map' : 'false',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './assets/js/[name].js?[hash:8]',
@@ -109,12 +109,12 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: extractCSS.extract(['css-loader', 'postcss-loader']),
-        include: path.resolve('src/css'),
-        exclude: path.resolve('./node_modules'),
-      },
+      // {
+      //   test: /\.css$/,
+      //   // use: extractCSS.extract(['css-loader', 'postcss-loader']),
+      //   include: path.resolve('src/css'),
+      //   exclude: path.resolve('./node_modules'),
+      // },
       {
         test: /\.(sass|scss)$/,
         use: extractCSS.extract([
@@ -127,13 +127,13 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: true, // 開啟 sourcemap 支持
+              // sourceMap: true, // 開啟 sourcemap 支持
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true, // 開啟 sourcemap 支持
+              // sourceMap: true, // 開啟 sourcemap 支持
             },
           },
         ]),
