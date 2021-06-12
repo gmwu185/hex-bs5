@@ -2,7 +2,6 @@ $lineStyleTitleBorderColor: $primary;
 .c-lineStyleTitle {
   background-size: 43px auto;
   background-repeat: no-repeat;
-  background-image: url(~images/hezuo.svg);
   background-position: top center;
   display: table;
   padding-top: 40px;
@@ -16,6 +15,9 @@ $lineStyleTitleBorderColor: $primary;
     background: linear-gradient($lineStyleTitleBorderColor, $lineStyleTitleBorderColor) repeat-x left center;
     background-size: auto;
     background-size: 3px 3px;
+  }
+  &--bgHezuo {
+    background-image: url(~images/hezuo.svg);
   }
   &__text {
     // display: inline-block;

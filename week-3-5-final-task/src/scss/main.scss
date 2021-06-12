@@ -110,12 +110,18 @@ image {
 
 
 /*=============================================
-=                   layout                   =
+=                   pages                   =
 =============================================*/
 
+.p-followNavSidebar {
+  @include media-breakpoint-up(lg) {
+    max-height: calc(100vh - 100px);
+    top: 90px;
+    position: sticky;
+  }
+}
 
-
-/*============  End of layout  =============*/
+/*============  End of pages  =============*/
 
 
 
@@ -138,6 +144,39 @@ image {
   @include media-breakpoint-down(md) {
     border-radius: 8px;
   }
+}
+
+.userAvatar {
+  width: 70px;
+  height: 70px;
+  border: 3px solid $primary;
+  border-radius: 50px;
+  @include media-breakpoint-up(lg) {
+    width: 100px;
+    height: 100px;
+  }
+  &--img {
+    background-image: url(~images/store_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  auto 100%;
+  }
+}
+
+$bothSidesBorderTitleBGColor: $ghostWhite;
+$bothSidesBorderTitleBolderColor: $gold;
+$bothSidesBorderTitleBolderSiez: 4px;
+.bothSidesBordeTitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: $bothSidesBorderTitleBGColor;
+  border-right: $bothSidesBorderTitleBolderSiez solid $bothSidesBorderTitleBolderColor;
+  border-left: $bothSidesBorderTitleBolderSiez solid $bothSidesBorderTitleBolderColor;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 @import 'components/c-responsiveTip';
