@@ -688,7 +688,7 @@ $btn-link-hover-color:        $link-hover-color !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;  // $border-radius !default;
+$btn-border-radius:           50px !default;  // $border-radius !default;
 $btn-border-radius-sm:        8px !default;  // $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 

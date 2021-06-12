@@ -147,13 +147,31 @@
     </nav>
     <main class="container pt-5">
       <articlez class="row position-lg-relative">
-        <section class="col-lg-8 bg-secondary">
-          <h2>施了魔法的照片</h2>
+        <section class="col-lg-8">
+          <ul class="list-unstyled mb-8 mb-lg-12">
+            <li class="mb-lg-6">
+              <img class="img-fluid productCover mb-4 mb-lg-6" src="assets/images/p1.jpg" alt="">
+              <h2 class="mb-2 mb-lg-2">施了魔法的照片</h2>
+              <p class="mb-4 mb-lg-4">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+            </li>
+            <li class="mb-lg-6">
+              <img class="img-fluid productCover mb-4 mb-lg-6" src="assets/images/p2.jpg" alt="">
+              <h2 class="mb-2 mb-lg-2">留下當下的美好</h2>
+              <p class="mb-4 mb-lg-4">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+            </li>
+          </ul>
         </section>
-        <section class="col-lg-4 bg-lightKhaki position-lg-absolute top-0 end-0 h-100 overflow-auto">
+        <section class="col-lg-4 position-lg-absolute top-0 end-0 h-100 overflow-auto">
+          <div class="alert bg-white border" role="alert">
+            缺錢事務所
+            已發起 1 個專案
+            <p>需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+            <a class="c-dotLink c-dotLink--hover" href="#" target="new"><span class="c-dotLink__icon fab fa-facebook-f"></span></a>
+            <a class="c-dotLink c-dotLink--hover" href="#" target="new"><span class="c-dotLink__icon fab fa-youtube"></span></a>
+          </div>
           <h3>選擇一個方案來支持</h3>
           <div class="card">
-            <div class="card-bod">
+            <div class="card-body">
               <h2>買一送一，只有兩百組別錯過</h2>
               <p>NT1 1600</p>
               <p class="mb-2">
@@ -165,36 +183,55 @@
             </div>
           </div>
         </section>
-        <section class="col-lg-8 bg-success">
+        <section class="col-lg-8">
           <h4>贊助專案</h4>
           <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="selectEx" class="form-label">
-                贊助方案
-              </label>
-              <select class="form-select" id="selectEx" aria-label="Default select example">
-                <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
-                <option value="1">方案一</option>
-                <option value="2">方案二</option>
-                <option value="3">方案三</option>
-              </select>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
-                收件人姓名
-              </label>
-              <input class="form-control" id="exampleFormControlInput1" placeholder="請輸入姓名">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationServer03" class="form-label">連絡信箱</label>
-              <input class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required="">
-              <div id="validationServer03Feedback" class="invalid-feedback">
-                請輸入正確的郵件格式
+            <div class="col">
+              <div class="mb-4">
+                <label for="sponsorship" class="form-label">
+                  贊助方案
+                </label>
+                <select class="form-select" id="sponsorship">
+                  <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
+                  <option value="1">方案一</option>
+                  <option value="2">方案二</option>
+                  <option value="3">方案三</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="input-user-name" class="form-label">
+                  收件人姓名
+                </label>
+                <input class="form-control" id="input-user-name" placeholder="">
+                <div class="mb-4">
+                  <label for="input-user-phone-num" class="form-label">
+                    聯絡電話
+                  </label>
+                  <input class="form-control" id="input-user-phone-num" placeholder="">
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="input-user-email" class="form-label">連絡信箱</label>
+                <input class="form-control is-invalid" id="input-user-email" aria-describedby="input-user-emailFeedback" required="">
+                <div id="input-user-emailFeedback" class="invalid-feedback">
+                  請輸入正確的郵件格式
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="payment-method" class="form-label">
+                  付款方式
+                </label>
+                <select class="form-select" id="payment-method">
+                  <option value="" selected="selected" disabled="disabled">信用卡付款</option>
+                  <option value="1">方案一</option>
+                  <option value="2">方案二</option>
+                  <option value="3">方案三</option>
+                </select>
               </div>
             </div>
           </div>
           <div class="text-center">
-            <a href="#" class="btn">贊助專案</a>
+            <a href="#" class="btn btn-primary">贊助專案</a>
           </div>
         </section>
       </articlez>

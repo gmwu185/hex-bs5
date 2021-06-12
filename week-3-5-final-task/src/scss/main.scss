@@ -93,6 +93,8 @@ image {
   }
   &-lg {
     line-height: 24px;
+  }
+  &-trengthen {
     @include media-breakpoint-up(md) {
       line-height: 24px;
       padding-top: .75rem;
@@ -129,6 +131,7 @@ image {
   background-size: cover;
   background-image: url(~images/logo.jpg);
 }
+
 .productCover {
   overflow: hidden;
   border-radius: 30px;
@@ -137,6 +140,7 @@ image {
   }
 }
 
+@import 'components/c-dotLink';
 @import 'components/c-LineStyleIcon';
 @import 'components/c-responsiveTip';
 
