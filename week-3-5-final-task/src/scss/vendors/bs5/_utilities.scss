@@ -54,6 +54,7 @@ $utilities: map-merge(
     // scss-docs-start utils-position
     "position": (
       property: position,
+      responsive: trnu, // 自訂
       values: static relative absolute fixed sticky
     ),
     "top": (

@@ -44,7 +44,7 @@
               <a class="nav-link px-6" href="#">我有個大膽的想法</a>
             </li>
           </ul>
-          <div class="d-flex justify-content-center justify-content-md-start">
+          <div class="d-flex justify-content-center justify-content-lg-start">
             <button class="btn btn-primary rounded-pill px-8 me-4" type="submit">登入</button>
             <button class="btn btn-outline-secondary rounded-pill px-8" type="submit">註冊</button>
           </div>
@@ -91,6 +91,12 @@
                 <div class="col-md-4">
                   <div class="p-3 mb-3 bg-slateGray text-white">slateGray (#53524F / $slateGray)</div>
                 </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-lightKhaki">lightKhaki (#E8E8DB / $lightKhaki)</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="p-3 mb-3 bg-darkOlive text-white">darkOlive (#494846 / $darkOlive)</div>
+                </div>
               </div>
             </div>
           </div>
@@ -101,6 +107,7 @@
           <div class="card">
             <div class="card-body">
               <h2 class="card-title border-bottom border-dark pb-1 mb-3">顏色 (Colors)</h2>
+              <h3 class="h5">框架主題</h3>
               <div class="d-inline-flex flex-wrap">
                 <p class="text-primary me-3 mb-3">.text-primary</p>
                 <p class="text-secondary me-3 mb-3">.text-secondary</p>
@@ -109,13 +116,20 @@
                 <p class="text-warning bg-dark me-3 mb-3">.text-warning</p>
                 <p class="text-info bg-dark me-3 mb-3">.text-info</p>
                 <p class="text-light bg-dark me-3 mb-3">.text-light</p>
-                <p class="text-dark me-3 mb-3">.text-dark</p>
                 <p class="text-body me-3 mb-3">.text-body</p>
                 <p class="text-muted me-3 mb-3">.text-muted</p>
                 <p class="text-white bg-dark me-3 mb-3">.text-white</p>
                 <p class="text-black-50 me-3 mb-3">.text-black-50</p>
                 <p class="text-white-50 bg-dark me-3 mb-3">.text-white-50</p>
+                <p class="text-dark me-3 mb-3">.text-dark</p>
                 <p class="me-3 mb-3">一般文字 ($body-color -> $dimSlateGray / #494846)</p>
+              </div>
+              <h3 class="h5">主題擴充</h3>
+              <div class="d-inline-flex flex-wrap">
+                <p class="text-dimSlateGray me-3 mb-3">.text-dimSlateGray</p>
+                <p class="text-slateGray me-3 mb-3">.text-slateGray</p>
+                <p class="text-lightKhaki bg-dark me-3 mb-3">.text-lightKhaki</p>
+                <p class="text-darkOlive me-3 mb-3">.text-darkOlive</p>
               </div>
               <hr>
               <h3 class="h5 mb-2">表單 (Forms) / 驗證 (Validation)</h3>
@@ -130,14 +144,130 @@
         </div>
       </div>
       <div class="row mb-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title border-bottom border-dark pb-1 mb-3">自訂通用類別 (utilities)</h2>
+              <h3 class="h5 mb-2">width</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">responsive: trnu,</li>
+                <li class="list-inline-item">5: 5%,</li>
+                <li class="list-inline-item">10: 10%,</li>
+                <li class="list-inline-item">15: 15%,</li>
+                <li class="list-inline-item">20: 20%,</li>
+                <li class="list-inline-item">25: 25%,</li>
+                <li class="list-inline-item">30: 30%,</li>
+                <li class="list-inline-item">35: 35%,</li>
+                <li class="list-inline-item">40: 40%,</li>
+                <li class="list-inline-item">45: 45%,</li>
+                <li class="list-inline-item">50: 50%,</li>
+                <li class="list-inline-item">55: 55%,</li>
+                <li class="list-inline-item">60: 60%,</li>
+                <li class="list-inline-item">65: 65%,</li>
+                <li class="list-inline-item">70: 70%,</li>
+                <li class="list-inline-item">75: 75%,</li>
+                <li class="list-inline-item">80: 80%,</li>
+                <li class="list-inline-item">85: 85%,</li>
+                <li class="list-inline-item">90: 90%,</li>
+                <li class="list-inline-item">95: 95%,</li>
+                <li class="list-inline-item">100: 100%,</li>
+                <li class="list-inline-item">auto: auto</li>
+              </ul>
+              <h3 class="h5 mb-2">spacers (注意單位)</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">0: 0,</li>
+                <li class="list-inline-item">1: 1spacer / 4,     (4 px)</li>
+                <li class="list-inline-item">2: 1spacer / 2,     (8 px)</li>
+                <li class="list-inline-item">3: 1spacer * .75,   (12 px)</li>
+                <li class="list-inline-item">4: 1spacer,         (16 px)</li>
+                <li class="list-inline-item">5: 1spacer * 1.25,  (20 px)</li>
+                <li class="list-inline-item">6: 1spacer * 1.5,   (24 px)</li>
+                <li class="list-inline-item">7: 1spacer * 1.75,  (28 px)</li>
+                <li class="list-inline-item">8: 1spacer * 2,     (32 px)</li>
+                <li class="list-inline-item">9: 1spacer * 2.25,  (36 px)</li>
+                <li class="list-inline-item">10: 1spacer * 2.5,  (40 px)</li>
+                <li class="list-inline-item">11: 1spacer * 2.75, (44 px)</li>
+                <li class="list-inline-item">12: 1spacer * 3,    (48 px)</li>
+              </ul>
+              <h3 class="h5 mb-2">font-size</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">responsive: true,</li>
+                <li class="list-inline-item">1: 12px,</li>
+                <li class="list-inline-item">2: 14px,</li>
+                <li class="list-inline-item">3: 16px,</li>
+                <li class="list-inline-item">4: 18px,</li>
+                <li class="list-inline-item">5: 20px,</li>
+                <li class="list-inline-item">6: 22px,</li>
+                <li class="list-inline-item">7: 24px,</li>
+                <li class="list-inline-item">8: 26px,</li>
+                <li class="list-inline-item">9: 28px,</li>
+                <li class="list-inline-item">10: 30px,</li>
+                <li class="list-inline-item">11: 32px,</li>
+              </ul>
+              <h3 class="h5 mb-2">font-weight</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">light: $font-weight-light, (lighter)</li>
+                <li class="list-inline-item">lighter: $font-weight-lighter, (300)</li>
+                <li class="list-inline-item">normal: $font-weight-normal, (400)</li>
+                <li class="list-inline-item">bold: $font-weight-bold, (700)</li>
+                <li class="list-inline-item">bolder: $font-weight-bolder, (bolder)</li>
+                <li class="list-inline-item">"100": 100,</li>
+                <li class="list-inline-item">"200": 200,</li>
+                <li class="list-inline-item">"300": 300,</li>
+                <li class="list-inline-item">"400": 400,</li>
+                <li class="list-inline-item">"500": 500,</li>
+                <li class="list-inline-item">"600": 600,</li>
+                <li class="list-inline-item">"700": 700,</li>
+                <li class="list-inline-item">"800": 800,</li>
+                <li class="list-inline-item">"900": 900</li>
+              </ul>
+              <h3 class="h5 mb-2">line-height (注意單位)</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">responsive: true,</li>
+                <li class="list-inline-item">1: 1,</li>
+                <li class="list-inline-item">sm: 1line-height-sm, (1.5)</li>
+                <li class="list-inline-item">base: 1line-height-base, (1.25)</li>
+                <li class="list-inline-item">lg: 1line-height-lg, (2)</li>
+                <li class="list-inline-item">20: 20px,</li>
+                <li class="list-inline-item">25: 25px,</li>
+                <li class="list-inline-item">26: 26px,</li>
+                <li class="list-inline-item">36: 36px,</li>
+                <li class="list-inline-item">47: 47px,</li>
+                <li class="list-inline-item">56: 56px,</li>
+              </ul>
+              <h3 class="h5 mb-2">letter-spacing</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">responsive: true,</li>
+                <li class="list-inline-item">"normal": normal, (預設值，單字或段落間的水平距離為預設效果)</li>
+                <li class="list-inline-item">"inherit": inherit, (繼承自父層的 word-spacing 屬性值)</li>
+                <li class="list-inline-item">0: 0px,</li>
+                <li class="list-inline-item">017: 0.17px,</li>
+                <li class="list-inline-item">020: 0.20px,</li>
+                <li class="list-inline-item">060: 0.60px,</li>
+                <li class="list-inline-item">070: 0.70px,</li>
+                <li class="list-inline-item">080: 0.80px,</li>
+                <li class="list-inline-item">100: 1.00px,</li>
+                <li class="list-inline-item">160: 1.60px,</li>
+                <li class="list-inline-item">175: 1.75px,</li>
+                <li class="list-inline-item">190: 1.90px,</li>
+                <li class="list-inline-item">200: 2.00px,</li>
+                <li class="list-inline-item">225: 2.25px,</li>
+                <li class="list-inline-item">300: 3px</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
         <div class="col-xl-12">
           <div class="card">
             <div class="u-box u-box-shadow u-boxBgImg u-boxBgImg--a1"></div>
             <div class="card-body">
               <h2 class="card-title border-bottom border-dark pb-1 mb-3">字體與 iconFont 設定</h2>
-              <div class="row mb-3">
-                <div class="col">
-                  <h3 class="h5">思源黑體 (Noto Sans TC) <small>Regular 400 / Medium 500 / Bold 700 </small> (<a href="https://fonts.google.com/specimen/Noto+Sans+TC" target="new">連結</a>)</h3>
+              <div class="row row-cols-2 mb-3">
+                <div class="col mb-5">
+                  <h3 class="h5">思源黑體 (Noto Sans TC) (<a href="https://fonts.google.com/specimen/Noto+Sans+TC" target="new">連結</a>)</h3>
+                  <p><small>Regular 400 / Medium 500 / Bold 700 </small></p>
                   <p class="card-text u-fontFamily--NotoSansTC h3 fw-bold u-textSpacing--3">
                     拍出會動的照片｜LivePhotos 魔法拍立得 (h3)
                   </p>
@@ -151,10 +281,9 @@
                     拍出會動的照片｜LivePhotos 魔法拍立得 (h6)
                   </p>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md">
-                  <h3 class="h5">Baloo Tamma 2 (Regular 400 / Semi-bold 600) (<a href="https://fonts.google.com/specimen/Baloo+Tamma+2" target="new">連結</a>)</h3>
+                <div class="col mb-5">
+                  <h3 class="h5">Baloo Tamma 2 (<a href="https://fonts.google.com/specimen/Baloo+Tamma+2" target="new">連結</a>)</h3>
+                  <p><small>(Regular 400 / Semi-bold 600)</small></p>
                   <p class="card-text u-fontFamily--BalooTamma2 h3 fw-bold u-textSpacing--3">
                     $280,047 (h3)
                   </p>
@@ -168,7 +297,7 @@
                     $280,047 (h6)
                   </p>
                 </div>
-                <div class="col-md">
+                <div class="col">
                   <h3 class="h5">fontawesome (<a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="new">連結</a>)</h3>
                   <p class="card-text">
                     <i class="fab fa-facebook-f"></i>
@@ -178,7 +307,7 @@
                     <i class="fas fa-share-alt"></i>
                   </p>
                 </div>
-                <div class="col-md">
+                <div class="col">
                   <h3 class="h5">material-design-icons (<a href="https://fonts.google.com/icons?selected=Material+Icons" target="new">連結</a>)</h3>
                   <p class="card-text">
                     <span class="material-icons">menu</span>

@@ -8,7 +8,7 @@ $tipBgColor: $dimSlateGray;
   align-items: center;
   font-size: 12px;
   margin-right: 8px;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     margin-right: 24px;
     position: relative;
     display: inline-block;
@@ -20,7 +20,7 @@ $tipBgColor: $dimSlateGray;
     width: 20px;
     height: 20px;
     margin-right: 8px;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       width: 24px;
       height: 24px;
       margin-right: 25px;
@@ -29,7 +29,7 @@ $tipBgColor: $dimSlateGray;
   }
   .c-responsiveTip__text {
     color: $olive;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       color: $gold;
       visibility: hidden;
       background-color: $tipBgColor;

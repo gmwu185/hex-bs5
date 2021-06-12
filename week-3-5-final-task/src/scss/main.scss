@@ -93,7 +93,7 @@ image {
   }
   &-lg {
     line-height: 24px;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       line-height: 24px;
       padding-top: .75rem;
       padding-bottom: .75rem;
