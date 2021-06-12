@@ -1,0 +1,31 @@
+$lineStyleTitleBorderColor: $primary;
+.c-lineStyleTitle {
+  background-size: 43px auto;
+  background-repeat: no-repeat;
+  background-image: url(~images/hezuo.svg);
+  background-position: top center;
+  display: table;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  &::before, &::after {
+    content: "";
+    display: table-cell;
+    width: 50%;
+    background: linear-gradient($lineStyleTitleBorderColor, $lineStyleTitleBorderColor) repeat-x left center;
+    background-size: auto;
+    background-size: 3px 3px;
+  }
+  &__text {
+    // display: inline-block;
+    // word-break: keep-all;
+    white-space: nowrap;
+    padding-left: .8125rem;
+    padding-right: .8125rem;
+    @include media-breakpoint-up(lg) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

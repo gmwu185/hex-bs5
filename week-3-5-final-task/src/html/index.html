@@ -89,19 +89,19 @@
                 </div>
                 <ul class="list-unstyled list-group list-group-horizontal mb-4 justify-content-between justify-content-lg-start">
                   <li class="c-responsiveTip">
-                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--popularityKing mr-2"></span>
+                    <span class="c-responsiveTip__icon c-lineStyleIcon c-lineStyleIcon--popularityKing mr-2"></span>
                     <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">認證</span><span class="d-inline-block">標章</span></span>
                   </li>
                   <li class="c-responsiveTip">
-                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--certification mr-2"></span>
+                    <span class="c-responsiveTip__icon c-lineStyleIcon c-lineStyleIcon--certification mr-2"></span>
                     <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">品質</span><span class="d-inline-block">保證</span></span>
                   </li>
                   <li class="c-responsiveTip">
-                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--great mr-2"></span>
+                    <span class="c-responsiveTip__icon c-lineStyleIcon c-lineStyleIcon--great mr-2"></span>
                     <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">原生</span><span class="d-inline-block">創意</span></span>
                   </li>
                   <li class="c-responsiveTip">
-                    <span class="c-responsiveTip__icon c-LineStyleIcon c-LineStyleIcon--idea mr-2"></span>
+                    <span class="c-responsiveTip__icon c-lineStyleIcon c-lineStyleIcon--idea mr-2"></span>
                     <span class="c-responsiveTip__text fs-md-2"><span class="d-inline-block">人氣王</span></span>
                   </li>
                 </ul>
@@ -146,8 +146,8 @@
       </div>
     </nav>
     <main class="container pt-5">
-      <articlez class="row position-lg-relative">
-        <section class="col-lg-8">
+      <article class="row position-lg-relative">
+        <section class="col-lg-8 pe-lg-6">
           <ul class="list-unstyled mb-8 mb-lg-12">
             <li class="mb-lg-6">
               <img class="img-fluid productCover mb-4 mb-lg-6" src="assets/images/p1.jpg" alt="">
@@ -161,7 +161,7 @@
             </li>
           </ul>
         </section>
-        <section class="col-lg-4 position-lg-absolute top-0 end-0 h-100 overflow-auto">
+        <section class="col-lg-4 position-lg-absolute top-0 end-0 h-100 overflow-auto ps-lg-5">
           <div class="alert bg-white border" role="alert">
             缺錢事務所
             已發起 1 個專案
@@ -183,8 +183,10 @@
             </div>
           </div>
         </section>
-        <section class="col-lg-8">
-          <h4>贊助專案</h4>
+        <section class="col-lg-8 pe-lg-6">
+          <h4 class="c-lineStyleTitle">
+            <span class="c-lineStyleTitle__text fs-lg-7 ls-160 ls-lg-190 lh-29 lh-lg-36 mb-4 mb-lg-6">贊助專案</span>
+          </h4>
           <div class="row">
             <div class="col">
               <div class="mb-4">
@@ -193,9 +195,9 @@
                 </label>
                 <select class="form-select" id="sponsorship">
                   <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
-                  <option value="1">方案一</option>
-                  <option value="2">方案二</option>
-                  <option value="3">方案三</option>
+                  <option value="sponsorship-1">方案一</option>
+                  <option value="sponsorship-2">方案二</option>
+                  <option value="sponsorship-3">方案三</option>
                 </select>
               </div>
               <div class="mb-4">
@@ -203,12 +205,12 @@
                   收件人姓名
                 </label>
                 <input class="form-control" id="input-user-name" placeholder="">
-                <div class="mb-4">
-                  <label for="input-user-phone-num" class="form-label">
-                    聯絡電話
-                  </label>
-                  <input class="form-control" id="input-user-phone-num" placeholder="">
-                </div>
+              </div>
+              <div class="mb-4">
+                <label for="input-user-phone-num" class="form-label">
+                  聯絡電話
+                </label>
+                <input class="form-control" id="input-user-phone-num" placeholder="">
               </div>
               <div class="mb-4">
                 <label for="input-user-email" class="form-label">連絡信箱</label>
@@ -223,9 +225,9 @@
                 </label>
                 <select class="form-select" id="payment-method">
                   <option value="" selected="selected" disabled="disabled">信用卡付款</option>
-                  <option value="1">方案一</option>
-                  <option value="2">方案二</option>
-                  <option value="3">方案三</option>
+                  <option value="payment-method-1">付款方式一</option>
+                  <option value="payment-method-2">付款方式二</option>
+                  <option value="payment-method-3">付款方式三</option>
                 </select>
               </div>
             </div>
@@ -234,7 +236,7 @@
             <a href="#" class="btn btn-primary">贊助專案</a>
           </div>
         </section>
-      </articlez>
+      </article>
     </main>
     <footer class="text-center text-white fs-1 fs-lg-3 bg-darkOlive p-4 p-lg-8 ">Copyright © 拼拼 All rights reserved.</footer>
   </body>
