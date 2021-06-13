@@ -399,7 +399,12 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
 ) !default;
 
 $border-color:                $gray-300 !default;
@@ -1288,7 +1293,7 @@ $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
 $modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-border-radius:       8px !default;  // $border-radius-lg !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs:       $box-shadow-sm !default;
 $modal-content-box-shadow-sm-up:    $box-shadow !default;
