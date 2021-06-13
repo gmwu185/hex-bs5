@@ -163,26 +163,11 @@ image {
   }
 }
 
-$bothSidesBorderTitleBGColor: $ghostWhite;
-$bothSidesBorderTitleBolderColor: $gold;
-$bothSidesBorderTitleBolderSiez: 4px;
-.bothSidesBordeTitle {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  background-color: $bothSidesBorderTitleBGColor;
-  border-right: $bothSidesBorderTitleBolderSiez solid $bothSidesBorderTitleBolderColor;
-  border-left: $bothSidesBorderTitleBolderSiez solid $bothSidesBorderTitleBolderColor;
-  border-radius: 8px;
-  overflow: hidden;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 @import 'components/c-responsiveTip';
 @import 'components/c-dotLink';
 @import 'components/c-lineStyleIcon';
 @import 'components/c-lineStyleTitle';
+@import 'components/c-bothSidesBordeTitle';
 /*============  End of components  =============*/
 
 
@@ -191,8 +176,5 @@ $bothSidesBorderTitleBolderSiez: 4px;
 =                   utilities                   =
 =============================================*/
 
-.u-textSpacing--3px {
-  letter-spacing: 3px;
-}
 
 /*============  End of utilities  =============*/
