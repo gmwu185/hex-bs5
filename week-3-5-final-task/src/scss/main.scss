@@ -115,9 +115,37 @@ image {
 
 .p-followNavSidebar {
   @include media-breakpoint-up(lg) {
-    max-height: calc(100vh - 100px);
-    top: 90px;
+    max-height: calc(100vh - 120px);
+    top: 110px;
     position: sticky;
+  }
+}
+.p-followNavTab {
+  background: linear-gradient($lightKhaki, $lightKhaki) repeat-x left center;
+  background-position-y: bottom;
+  background-size: 2px 2px;
+}
+.p-horizontalCard {
+  &Photo {
+    width: 135px;
+    height: 132px;
+    @include media-breakpoint-up(md) {
+      width: 220px;
+      height: 168px;
+    }
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--news01 {
+      background-image: url(~images/news01.jpg);
+    }
+    &--news02 {
+      background-image: url(~images/news02.jpg);
+    }
+    &--news03 {
+      background-image: url(~images/news03.jpg);
+    }
   }
 }
 

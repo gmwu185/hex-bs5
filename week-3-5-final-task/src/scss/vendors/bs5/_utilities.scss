@@ -29,6 +29,14 @@ $utilities: map-merge(
       property: overflow,
       values: auto hidden visible scroll,
     ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-y": (
+      property: overflow-y,
+      values: auto hidden visible scroll,
+    ),
     // scss-docs-end utils-overflow
     // scss-docs-start utils-display
     "display": (
@@ -513,7 +521,15 @@ $utilities: map-merge(
         38: 38px,
         39: 39px,
         40: 40px,
+        41: 41px,
+        42: 42px,
+        43: 43px,
+        44: 44px,
+        45: 45px,
+        46: 46px,
         47: 47px,
+        48: 48px,
+        49: 49px,
         56: 56px,
       )
     ),
@@ -532,6 +548,7 @@ $utilities: map-merge(
         0: 0px,
         017: 0.17px,
         020: 0.20px,
+        049: 0.49px,
         060: 0.60px,
         070: 0.70px,
         080: 0.80px,

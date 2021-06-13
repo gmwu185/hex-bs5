@@ -27,7 +27,7 @@ module.exports = {
    */
   devtool: (process.env.NODE_ENV === 'development') ? 'cheap-module-source-map' : 'false',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, (process.env.NODE_ENV === 'development') ? 'dist' : 'docs'),
     filename: './assets/js/[name].js?[hash:8]',
   },
   /**
