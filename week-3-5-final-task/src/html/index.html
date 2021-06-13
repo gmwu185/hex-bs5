@@ -38,7 +38,7 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center justify-content-md-start">
-            <button class="btn btn-primary rounded-pill px-8 me-4" type="submit">登入</button>
+            <button class="btn btn-primary rounded-pill px-8 me-4" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">登入</button>
             <button class="btn btn-outline-secondary rounded-pill px-8" type="submit">註冊</button>
           </div>
         </div>
@@ -147,8 +147,8 @@
     </nav>
     <main class="container pt-5">
       <article class="row position-lg-relative pb-12">
-        <section class="col-lg-8 pe-lg-6">
-          <ul class="list-unstyled mb-8 mb-lg-12">
+        <section class="col-lg-8">
+          <ul class="list-unstyled mb-8 mb-lg-12 pe-lg-3">
             <li class="mb-lg-6">
               <img class="img-fluid productCover mb-4 mb-lg-6" src="assets/images/p1.jpg" alt="">
               <h3 class="fs-5 fs-lg-7 lh-21 lh-lg-28 ls-160 ls-lg-190 border-start border-primary border-4 ps-4 mb-2 mb-lg-2">施了魔法的照片</h3>
@@ -161,134 +161,169 @@
             </li>
           </ul>
         </section>
-        <section class="col-lg-4 p-followNavSidebar end-0 h-100 overflow-auto ps-lg-5 mb-8 mb-lg-0">
-          <div class="alert bg-white border" role="alert">
-            <div class="d-flex flex-wrap align-items-center mb-4">
-              <div class="userAvatar userAvatar--img me-4"></div>
-              <div>
-                <h4 class="mb-2">缺錢事務所</h4>
-                <p class="mb-0">已發起 1 個專案</p>
+        <section class="col-lg-4 p-followNavSidebar end-0 h-100 overflow-auto  mb-8 mb-lg-0">
+          <div class="ps-xl-2">
+            <div class="alert bg-white border" role="alert">
+              <div class="d-flex flex-wrap align-items-center mb-4">
+                <div class="userAvatar userAvatar--img me-4"></div>
+                <div>
+                  <h4 class="mb-2">缺錢事務所</h4>
+                  <p class="mb-0">已發起 1 個專案</p>
+                </div>
+              </div>
+              <p class="d-none d-md-block">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="me-auto">
+                  <a class="c-dotLink c-dotLink--hover me-2" href="#" target="new"><span class="c-dotLink__icon fab fa-facebook-f"></span></a>
+                  <a class="c-dotLink c-dotLink--hover me-2" href="#" target="new"><span class="c-dotLink__icon fab fa-youtube"></span></a>
+                </div>
+                <a class="btn btn-outline-secondary border-1 d-flex align-items-center ps-3 pe-5" href="#" target="new">
+                  <span class="far fa-comment-dots fs-2 me-1"></span>
+                  <span class="fs-1">聯絡我們</span>
+                </a>
               </div>
             </div>
-            <p class="d-none d-md-block">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="me-auto">
-                <a class="c-dotLink c-dotLink--hover me-2" href="#" target="new"><span class="c-dotLink__icon fab fa-facebook-f"></span></a>
-                <a class="c-dotLink c-dotLink--hover me-2" href="#" target="new"><span class="c-dotLink__icon fab fa-youtube"></span></a>
-              </div>
-              <a class="btn btn-outline-secondary border-1 d-flex align-items-center ps-3 pe-5" href="#" target="new">
-                <span class="far fa-comment-dots fs-2 me-1"></span>
-                <span class="fs-1">聯絡我們</span>
-              </a>
-            </div>
+            <h3 class="bothSidesBordeTitle u-fontFamily--NotoSansTC fw-700 mb-4">選擇一個方案來支持</h3>
+            <ul class="list-unstyled row row-cols-auto row-cols-md-2 row-cols-lg-1 mb-0">
+              <li class="col mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
+                  <div class="card-body">
+                    <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
+                    <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
+                    <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
+                    <p class="mb-2">
+                      <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
+                      <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
+                    </p>
+                    <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
+                  <div class="card-body">
+                    <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
+                    <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
+                    <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
+                    <p class="mb-2">
+                      <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
+                      <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
+                    </p>
+                    <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
+                  </div>
+                </div>
+              </li>
+              <li class="col mb-4">
+                <div class="card">
+                  <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
+                  <div class="card-body">
+                    <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
+                    <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
+                    <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
+                    <p class="mb-2">
+                      <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
+                      <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
+                    </p>
+                    <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                    <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <h3 class="bothSidesBordeTitle u-fontFamily--NotoSansTC fw-700 mb-4">選擇一個方案來支持</h3>
-          <ul class="list-unstyled row row-cols-auto row-cols-md-2 row-cols-lg-1 mb-0">
-            <li class="col mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
-                <div class="card-body">
-                  <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
-                  <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
-                  <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
-                  <p class="mb-2">
-                    <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
-                    <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
-                  </p>
-                  <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                  <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
-                </div>
-              </div>
-            </li>
-            <li class="col mb-4">
-              <div class="card">
-                <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
-                <div class="card-body">
-                  <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
-                  <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
-                  <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
-                  <p class="mb-2">
-                    <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
-                    <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
-                  </p>
-                  <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                  <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
-                </div>
-              </div>
-            </li>
-            <li class="col mb-0">
-              <div class="card">
-                <img class="card-img-top" src="assets/images/plan_img.jpg" alt="產品團購優惠封面圖片">
-                <div class="card-body">
-                  <small class="d-flex justify-content-between lh-24 text-gray pb-1 border-bottom mb-2"><span class="u-fontFamily--NotoSansTC border-lightKhaki">限時優惠</span><span>2 days 20:05:20</span></small>
-                  <h2 class="fs-4 fw-700 lh-27 ls-200 mb-0">買一送一，只有兩百組別錯過</h2>
-                  <p class="u-fontFamily--BalooTamma2 fw-600 fs-7 lh-40 mb-0">NT$ 1600</p>
-                  <p class="mb-2">
-                    <span class="badge bg-lightKhaki text-secondary me-2">已被贊助88次</span>
-                    <span class="badge bg-secondary me-2">限量<span class="text-primary">200</span>個</span>
-                  </p>
-                  <p class="text-secondary ls-70">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                  <a href="#" class="btn btn-primary d-block ">贊助此專案</a>
-                </div>
-              </div>
-            </li>
-          </ul>
         </section>
-        <section class="col-lg-8 pe-lg-6">
-          <h4 class="c-lineStyleTitle c-lineStyleTitle--bgHezuo mb-4 mb-lg-6">
-            <span class="c-lineStyleTitle__text fs-lg-7 ls-160 ls-lg-190 lh-29 lh-lg-36">贊助專案</span>
-          </h4>
-          <div class="row">
-            <form class="col">
-              <div class="mb-4">
-                <label for="sponsorship" class="form-label">
-                  贊助方案
-                </label>
-                <select class="form-select" id="sponsorship">
-                  <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
-                  <option value="sponsorship-1">方案一</option>
-                  <option value="sponsorship-2">方案二</option>
-                  <option value="sponsorship-3">方案三</option>
-                </select>
-              </div>
-              <div class="mb-4">
-                <label for="input-user-name" class="form-label">
-                  收件人姓名
-                </label>
-                <input class="form-control" id="input-user-name" placeholder="">
-              </div>
-              <div class="mb-4">
-                <label for="input-user-phone-num" class="form-label">
-                  聯絡電話
-                </label>
-                <input class="form-control" id="input-user-phone-num" placeholder="">
-              </div>
-              <div class="mb-4">
-                <label for="input-user-email" class="form-label">連絡信箱</label>
-                <input class="form-control is-invalid" id="input-user-email" aria-describedby="input-user-emailFeedback" required="">
-                <div id="input-user-emailFeedback" class="invalid-feedback">
-                  請輸入正確的郵件格式
+        <section class="col-lg-8">
+          <div class="pe-xl-3">
+            <h4 class="c-lineStyleTitle c-lineStyleTitleBg c-lineStyleTitleBg--3 c-lineStyleTitleBg--primary c-lineStyleTitleIcon c-lineStyleTitleIcon--bgHezuo mb-4 mb-lg-6">
+              <span class="c-lineStyleTitle__text fs-5 fs-lg-7 ls-160 ls-lg-190 lh-29 lh-lg-36">贊助專案</span>
+            </h4>
+            <div class="row">
+              <form class="col">
+                <div class="mb-4">
+                  <label for="sponsorship" class="form-label">
+                    贊助方案
+                  </label>
+                  <select class="form-select" id="sponsorship">
+                    <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
+                    <option value="sponsorship-1">方案一</option>
+                    <option value="sponsorship-2">方案二</option>
+                    <option value="sponsorship-3">方案三</option>
+                  </select>
                 </div>
-              </div>
-              <div class="mb-6">
-                <label for="payment-method" class="form-label">
-                  付款方式
-                </label>
-                <select class="form-select" id="payment-method">
-                  <option value="" selected="selected" disabled="disabled">信用卡付款</option>
-                  <option value="payment-method-1">付款方式一</option>
-                  <option value="payment-method-2">付款方式二</option>
-                  <option value="payment-method-3">付款方式三</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="text-center">
-            <a href="#" class="btn btn-primary d-block d-xl-inline-block px-12">贊助專案</a>
+                <div class="mb-4">
+                  <label for="input-user-name" class="form-label">
+                    收件人姓名
+                  </label>
+                  <input class="form-control" id="input-user-name" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="input-user-phone-num" class="form-label">
+                    聯絡電話
+                  </label>
+                  <input class="form-control" id="input-user-phone-num" placeholder="">
+                </div>
+                <div class="mb-4">
+                  <label for="input-user-email" class="form-label">連絡信箱</label>
+                  <input class="form-control is-invalid" id="input-user-email" aria-describedby="input-user-emailFeedback" required="">
+                  <div id="input-user-emailFeedback" class="invalid-feedback">
+                    請輸入正確的郵件格式
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label for="payment-method" class="form-label">
+                    付款方式
+                  </label>
+                  <select class="form-select" id="payment-method">
+                    <option value="" selected="selected" disabled="disabled">信用卡付款</option>
+                    <option value="payment-method-1">付款方式一</option>
+                    <option value="payment-method-2">付款方式二</option>
+                    <option value="payment-method-3">付款方式三</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="text-center">
+              <a href="#" class="btn btn-primary d-block d-xl-inline-block px-12">贊助專案</a>
+            </div>
           </div>
         </section>
       </article>
     </main>
     <footer class="text-center text-white fs-1 fs-lg-3 bg-darkOlive p-4 p-lg-8 ">Copyright © 拼拼 All rights reserved.</footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-4 border-primary border-end-0 border-bottom-0 border-start-0">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">登入</h4>
+            <button type="button" class="btn-close material-icons" data-bs-dismiss="modal" aria-label="Close">close</button>
+          </div>
+          <div class="modal-body">
+            <form action="xxx_serverUrl">
+              <div class='mb-4'>
+                <label for="input-login-Acount" class="form-label">帳號</label>
+                <input type="text" class="form-control" id="input-login-Acount" placeholder="">
+              </div>
+              <div class='mb-4'>
+                <label for="input-login-password" class="form-label">帳號</label>
+                <input type="password" class="form-control" id="input-login-password" placeholder="">
+                <div class="form-text">
+                  <a class="text-secondary text-decoration-none" href="#"><small>忘記密碼？</small></a>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-xl d-block mb-4" href="#">登入</a>
+              <small class="c-lineStyleTitle c-lineStyleTitleBg c-lineStyleTitleBg--1 c-lineStyleTitleBg--secondary text-secondary mb-4">
+                <span class="c-lineStyleTitle__text">還沒有帳號？ <a class="text-danger text-decoration-none" href="#">註冊一個帳號</a></span>
+              </small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
   </body>
 </html>
