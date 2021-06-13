@@ -1153,8 +1153,8 @@ $card-group-margin:                 $grid-gutter-width / 2 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
+$accordion-padding-y:                     .75rem !default;  // 1rem !default;
+$accordion-padding-x:                     .875rem !default;  // 1.25rem !default;
 $accordion-color:                         $body-color !default;
 $accordion-bg:                            $body-bg !default;
 $accordion-border-width:                  $border-width !default;
@@ -1170,11 +1170,11 @@ $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  $accordion-color !default;
 $accordion-button-bg:                     $accordion-bg !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-bg:              tint-color($darkOlive, 100%) !default; // tint-color($component-active-bg, 90%) !default;
+$accordion-button-active-color:           shade-color($darkOlive, 15%) !default;  // shade-color($primary, 10%) !default;
 
-$accordion-button-focus-border-color:     $input-focus-border-color !default;
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-border-color:     #E5E5E5 !default;  // $input-focus-border-color !default;
+$accordion-button-focus-box-shadow:       $darkOlive !default;  // $btn-focus-box-shadow !default;
 
 $accordion-icon-width:                    1.25rem !default;
 $accordion-icon-color:                    $accordion-color !default;

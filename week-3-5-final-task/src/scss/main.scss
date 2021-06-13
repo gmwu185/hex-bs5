@@ -44,7 +44,8 @@ image {
 @import "vendors/bs5/navbar";
 // @import "node_modules/bootstrap/scss/navbar";
 @import "node_modules/bootstrap/scss/card";
-@import "node_modules/bootstrap/scss/accordion";
+@import "vendors/bs5/accordion";
+// @import "node_modules/bootstrap/scss/accordion";
 @import "node_modules/bootstrap/scss/breadcrumb";
 @import "node_modules/bootstrap/scss/pagination";
 @import "vendors/bs5/badge";
@@ -174,43 +175,7 @@ image {
   }
 }
 
-.c-userAvatar {
-  border-radius: 50px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-  background-size: cover;
-  &--s {
-    width: 50px;
-    min-width: 50px;
-    height: 50px;
-    @include media-breakpoint-up(lg) {
-      width: 60px;
-      min-width: 60px;
-      height: 60px;
-    }
-  }
-  &--l {
-    width: 70px;
-    min-width: 70px;
-    height: 70px;
-    @include media-breakpoint-up(lg) {
-      width: 100px;
-      min-width: 100px;
-      height: 100px;
-    }
-  }
-  &--store {
-    background-image: url(~images/store_img.jpg);
-  }
-  &--userOne {
-    background-image: url(~images/user_img01.jpg);
-  }
-  &--onImg {
-    background-image: url(~images/user_img02.jpg);
-  }
-}
-
+@import 'components/c-userAvatar';
 @import 'components/c-responsiveTip';
 @import 'components/c-dotLink';
 @import 'components/c-lineStyleIcon';
