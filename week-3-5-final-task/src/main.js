@@ -46,6 +46,7 @@ import 'images/user_img02.jpg';
  * https://www.notion.so/js-a7767ef2caf24ee3af3ef5a29df80118
  */
 let sponsorBtn = document.getElementById('sponsorBtn');
+window.onload = triggerSponsorBtn();
 window.addEventListener("scroll",triggerSponsorBtn);
 function triggerSponsorBtn(){
   if(window.pageYOffset > 400 && window.pageYOffset < 1500){

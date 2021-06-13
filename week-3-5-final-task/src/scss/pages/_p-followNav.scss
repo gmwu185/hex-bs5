@@ -1,8 +1,12 @@
 .p-followNavSidebar {
   @include media-breakpoint-up(lg) {
-    max-height: calc(100vh - 120px);
-    top: 110px;
-    position: sticky;
+    position: absolute;
+    top: 0;
+    &__inner {
+      position: sticky;
+      max-height: calc(100vh - 120px);
+      top: 110px;
+    }
   }
 }
 .p-followNavTab {
