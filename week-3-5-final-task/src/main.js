@@ -40,3 +40,18 @@ import 'images/produt_image.jpg';
 import 'images/store_img.jpg';
 import 'images/user_img01.jpg';
 import 'images/user_img02.jpg';
+
+/* 手機版贊助專案按鈕 ---------------------------------------------------------------- */
+/** 參考資料
+ * https://www.notion.so/js-a7767ef2caf24ee3af3ef5a29df80118
+ */
+let sponsorBtn = document.getElementById('sponsorBtn');
+window.addEventListener("scroll",triggerSponsorBtn);
+function triggerSponsorBtn(){
+  if(window.pageYOffset > 400 && window.pageYOffset < 1500){
+    sponsorBtn.classList.remove('d-none');
+  }else{
+    sponsorBtn.classList.add('d-none');
+  }
+}
+/* 手機版贊助專案按鈕 ---------------------------------------------------------------- */
