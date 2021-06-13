@@ -1,0 +1,23 @@
+.p-horizontalCard {
+  &Photo {
+    width: 135px;
+    height: 132px;
+    @include media-breakpoint-up(md) {
+      width: 220px;
+      height: 168px;
+    }
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--news01 {
+      background-image: url(~images/news01.jpg);
+    }
+    &--news02 {
+      background-image: url(~images/news02.jpg);
+    }
+    &--news03 {
+      background-image: url(~images/news03.jpg);
+    }
+  }
+}

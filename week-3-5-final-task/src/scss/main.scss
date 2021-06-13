@@ -5,7 +5,7 @@
 =============================================*/
 
 @import 'base/fontSet';
-image {
+img {
   max-width: 100%;
 }
 
@@ -70,39 +70,7 @@ image {
 // scss-docs-end import-stack
 
 // BS 權重獨立
-.btn {
-  &-primary {
-    color: $olive;
-    &:hover, &:focus {
-      background-color: $lightSalmon;
-      border-color: $lightSalmon;
-      color: $white;
-    }
-  }
-  &-outline-secondary {
-    color: $darkKhaki;
-    &:hover, &:focus {
-      background-color: $gold;
-      border-color: $gold;
-      color: $darkKhaki
-    }
-    &:hover, &:focus {
-      .faIcon {
-        color: $lightSalmon;
-      }
-    }
-  }
-  &-lg {
-    line-height: 24px;
-  }
-  &-trengthen {
-    @include media-breakpoint-up(md) {
-      line-height: 24px;
-      padding-top: .75rem;
-      padding-bottom: .75rem;
-    }
-  }
-}
+@import "vendors/bs5/btnWeight_independent";
 // /BS 權重獨立
 /* /bootstrap 5 -------------------------------------------------------------- */
 
@@ -114,41 +82,8 @@ image {
 =                   pages                   =
 =============================================*/
 
-.p-followNavSidebar {
-  @include media-breakpoint-up(lg) {
-    max-height: calc(100vh - 120px);
-    top: 110px;
-    position: sticky;
-  }
-}
-.p-followNavTab {
-  background: linear-gradient($lightKhaki, $lightKhaki) repeat-x left center;
-  background-position-y: bottom;
-  background-size: 2px 2px;
-}
-.p-horizontalCard {
-  &Photo {
-    width: 135px;
-    height: 132px;
-    @include media-breakpoint-up(md) {
-      width: 220px;
-      height: 168px;
-    }
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    &--news01 {
-      background-image: url(~images/news01.jpg);
-    }
-    &--news02 {
-      background-image: url(~images/news02.jpg);
-    }
-    &--news03 {
-      background-image: url(~images/news03.jpg);
-    }
-  }
-}
+@import 'pages/p-followNav';
+@import 'pages/p-horizontalCard';
 
 /*============  End of pages  =============*/
 

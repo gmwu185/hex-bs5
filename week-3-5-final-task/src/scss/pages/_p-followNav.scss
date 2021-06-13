@@ -1,0 +1,12 @@
+.p-followNavSidebar {
+  @include media-breakpoint-up(lg) {
+    max-height: calc(100vh - 120px);
+    top: 110px;
+    position: sticky;
+  }
+}
+.p-followNavTab {
+  background: linear-gradient($lightKhaki, $lightKhaki) repeat-x left center;
+  background-position-y: bottom;
+  background-size: 2px 2px;
+}

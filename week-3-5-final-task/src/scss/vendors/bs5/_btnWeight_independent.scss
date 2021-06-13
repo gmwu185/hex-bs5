@@ -1,0 +1,33 @@
+.btn {
+  &-primary {
+    color: $olive;
+    &:hover, &:focus {
+      background-color: $lightSalmon;
+      border-color: $lightSalmon;
+      color: $white;
+    }
+  }
+  &-outline-secondary {
+    color: $darkKhaki;
+    &:hover, &:focus {
+      background-color: $gold;
+      border-color: $gold;
+      color: $darkKhaki
+    }
+    &:hover, &:focus {
+      .faIcon {
+        color: $lightSalmon;
+      }
+    }
+  }
+  &-lg {
+    line-height: 24px;
+  }
+  &-trengthen {
+    @include media-breakpoint-up(md) {
+      line-height: 24px;
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+  }
+}
