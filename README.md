@@ -7,6 +7,10 @@
 - [exercise-LV-1.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統/exercise-LV-1.html)
 - [exercise-LV-3.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統/exercise-LV-3.html)
 
+## week-3-第三堂最終關卡任務
+- [index.html](https://gmwu185.github.io/hex-bs5/week-3-5-final-task/docs/)
+- [設定文件](https://gmwu185.github.io/hex-bs5/week-3-5-final-task/docs/display.html)
+
 -------
 ## 相關資源：
 - [21 天 Bootstrap 5 新手實戰營 (hackmd 主要講義與課程大鋼)](https://hackmd.io/@YmcMgo-NSKOqgTGAjl_5tg/ryar-vGOd/https%3A%2F%2Fhackmd.io%2FoBNSob3fQCieEpal7Ck-wQ%3Fview)

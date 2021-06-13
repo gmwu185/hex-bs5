@@ -650,9 +650,20 @@ $utilities: map-merge(
       values: (
         null: $border-radius,
         0: 0,
-        1: $border-radius-sm,
-        2: $border-radius,
-        3: $border-radius-lg,
+        1: 4px,
+        2: 8px,
+        3: 12px,
+        4: 16px,
+        5: 20px,
+        6: 24px,
+        7: 28px,
+        8: 32px,
+        9: 36px,
+        10: 10px,
+
+        // 1: $border-radius-sm,
+        // 2: $border-radius,
+        // 3: $border-radius-lg,
         circle: 50%,
         pill: $border-radius-pill
       )
