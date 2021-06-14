@@ -70,12 +70,17 @@
   background-color: $accordion-bg;
   border: $accordion-border-width solid $accordion-border-color;
 
-  &:first-of-type {
-    @include border-top-radius($accordion-border-radius);
+  @include border-radius($accordion-border-radius);
+  .accordion-button {
+    @include border-radius($accordion-inner-border-radius);
+  }
 
-    .accordion-button {
-      @include border-top-radius($accordion-inner-border-radius);
-    }
+  &:first-of-type {
+    // @include border-top-radius($accordion-border-radius);
+
+    // .accordion-button {
+    //   @include border-top-radius($accordion-inner-border-radius);
+    // }
   }
 
   &:not(:first-of-type) {
