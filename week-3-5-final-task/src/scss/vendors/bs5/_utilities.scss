@@ -455,7 +455,47 @@ $utilities: map-merge(
     "font-family": (
       property: font-family,
       class: font,
-      values: (monospace: var(--#{$variable-prefix}font-monospace))
+      values: (
+        monospace: var(--#{$variable-prefix}font-monospace),
+        NotoSansTC: ('Noto Sans TC', sans-serif),
+        BalooTamma2: ('Baloo Tamma 2', cursive),
+      )
+      /**
+       ** 1. _utilities.scss 下的 "font-family" 設定：組成 CSS 樣式名 .font-monospace，CSS 值為 var(--bs-font-monospace)
+       * 1-1 $variable-prefix 為 Scss 變數設定 'bs-' 字串，以 Scss 值 (字串) 做為變數插入於 #{} 中，與後方的 'font-monospace' 組成 CSS 字串，組後為 '--bs-font-monospace'。
+       * 1-2 完整變數名組後，插入做為 CSS :root 裡的 --bs-font-monospace 變數名稱傳入 CSS :root 中，var(--bs-font-monospace) 做為 CSS 變數共用。
+       * PS. _utilities.scss 主要是生成 CSS 的樣式名稱與值，
+       * 
+       ** 2. _variables.scss：做為 Scss 共用變數後方呼叫取用。
+       * 2-1 檔中的 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, 遵 Scss 的變數設定，用於其他 Scss 呼叫使用與共用。
+       * 
+       * 
+       ** 3. _root.scss：輸出於 CSS 的 :root {} 變數，設定 CSS 下的全城變數。
+       * root.scss 裡面的 --#{$variable-prefix}font-monospace: #{inspect($font-family-monospace)}; 組合 CSS 設定
+       * 
+       * 3-1 #{inspect($font-family-monospace)}：CSS 的屬性值。
+       * 3-1-1 $font-family-monospace 取用 Scss 變數做為 CSS 的屬性值。
+       * 3-1-2 inspect() Scss 的方法：inspect(value) 返回字串的表示式 (陳述式)，
+       * 
+       * 3-2 --#{$variable-prefix}font-monospace: ：Scss 組出 CSS 的屬性名稱。
+       * 3-2-1 $variable-prefix 為 _variables.scss 檔中的 Scss 變數，預設為 -bs。
+       * 3-2-2 組合出來的 CSS 名會是 .font-monospac。
+       * 
+       * 
+       ** 4 Scss 輸出 CSS 後為 .font-monospace{font-family:var(--bs-font-monospace) !important}
+       * 4-1 CSS 名稱為 .font-monospace
+       * 4-2 CSS 屬性值，
+       * 4-2-1 用來呼叫 CSS 共用 :root {} 中的變數設定，以 CSS 的 var() 取用 -bs-font-monospace 裡面的變數做為設定。
+       * 4-2-2 取得 :root{} 變數做為字型設定，指定為 font-family: 屬名稱名稱為 CSSS 設定。
+       * 
+       ** 5.自定字型：
+       * 因為不在宣告 Scss 變數，直接以字串使用，使用方式為二種。
+       * 
+       * 5-1 NotoSansTC: ('Noto Sans TC', sans-serif),
+       * 5-1-1 NotoSansTC: 遵 _utilities.scss 輸出 CSS 後的名稱，組合 class: font, 設定，class 名為 .font-NotoSansTC
+       * 5-1-2 ('Noto Sans TC', sans-serif)：() 為 Scss 的陳述式，用來直接將 'Noto Sans TC', sans-serif 以字串輸出遵於 CSS 屬性設定。
+       * 
+       */
     ),
     "font-size": (
       // rfs: true,

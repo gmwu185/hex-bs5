@@ -8,6 +8,8 @@
 - [exercise-LV-3.html](https://gmwu185.github.io/hex-bs5/week-2-BS5格線系統/exercise-LV-3.html)
 
 ## week-3-第三堂最終關卡任務
+- [設計稿](https://hexschool.tw/hk1Ga)
+- [BS5 程式碼檢視大全](https://hackmd.io/@YmcMgo-NSKOqgTGAjl_5tg/HkOeaJIcO/%2F10fOwZuYQ_uCyWlUNFuk_g)
 - [index.html](https://gmwu185.github.io/hex-bs5/week-3-5-final-task/docs/)
 - [設定文件](https://gmwu185.github.io/hex-bs5/week-3-5-final-task/docs/display.html)
 
