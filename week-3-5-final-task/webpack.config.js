@@ -228,9 +228,9 @@ module.exports = {
 
     /* HTML 樣版 ------------------------------------------------------------------ */
     new HtmlWebpackPlugin({
-      title: '拼拼｜拍出會動的照片｜LivePhotos 魔法拍立得｜群眾募資平台',
+      title: '拼拼｜拍出會動的照片｜LivePhotos 魔法拍立得｜群眾募資平台',
       filename: 'index.html',
-      template: 'html/index.html',
+      template: 'index.html',
       viewport: 'width=device-width, initial-scale=1.0', // 'width=640, user-scalable=no',
       description: '拍出會動的照片｜LivePhotos 魔法拍立得',
       Keywords: '拍立得, LivePhotos, 動態照片拍立得, 募資平台, 魔法科技',
@@ -247,7 +247,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack 建立 bootstrap 5 編譯環境',
       filename: 'display.html',
-      template: 'html/display.html',
+      template: 'display.html',
       viewport: 'width=device-width, initial-scale=1.0', // 'width=640, user-scalable=no',
       description: 'Webpack 建立 bootstrap 5 編譯環境',
       Keywords: 'Webpack, bootstrap 5',
