@@ -14,6 +14,8 @@
   "html-css-class-completion.remoteStyleSheets": [
     "https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" // bootstrap 5 當下最新
   ],
+  /* /SCSS Everywhere ---------------------------------------------------------- */
+
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#7f40bf",
     "activityBar.activeBorder": "#c78f58",
@@ -28,5 +30,4 @@
     "titleBar.inactiveBackground": "#66339999"
   },
   "peacock.color": "#639"
-  /* /SCSS Everywhere ---------------------------------------------------------- */
 }
