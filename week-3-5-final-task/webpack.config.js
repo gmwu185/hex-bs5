@@ -200,10 +200,10 @@ module.exports = {
      * webpack 的 url-loader 以 image-webpack-loader 處理小於 8192 尺寸大小，將小圖直接使用 base64 方式包入 main.css 中。
      * 如果直接使用 main.js 注入圖片，透過 image-webpack-loader 也無法用於 .html 檔中。.html 等相關站台內取用圖片，使用此設定直接將圖片不以 lorader 方式處理。
      */
-    // new CopyWebpackPlugin([{
-    //   from: "assets/static-images/",
-    //   to: "assets/images/"
-    // }]),
+    new CopyWebpackPlugin([{
+      from: "assets/static-images/",
+      to: "assets/static-images/"
+    }]),
     /* 不處理直接搬圖片 ----------------------------------------------------------------- */
 
     /* 字體與 iconFont ---------------------------------------------------- */
