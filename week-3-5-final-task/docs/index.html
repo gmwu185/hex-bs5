@@ -426,34 +426,43 @@
                 <span class="c-lineStyleTitle__text fs-5 fs-lg-7 ls-160 ls-lg-190 lh-29 lh-lg-36">贊助專案</span>
               </h4>
               <div class="row">
-                <form class="col">
+                <form class="col needs-validation" novalidate>
                   <div class="mb-4">
                     <label for="sponsorship" class="form-label">
                       贊助方案
                     </label>
-                    <select class="form-select" id="sponsorship">
+                    <select class="form-select" id="sponsorship" required="">
                       <option value="" selected="selected" disabled="disabled">請選擇一個方案</option>
                       <option value="sponsorship-1">方案一</option>
                       <option value="sponsorship-2">方案二</option>
                       <option value="sponsorship-3">方案三</option>
                     </select>
+                    <div class="invalid-feedback">
+                      請選擇贊助方案
+                    </div>
                   </div>
                   <div class="mb-4">
                     <label for="input-user-name" class="form-label">
                       收件人姓名
                     </label>
-                    <input class="form-control" id="input-user-name" placeholder="">
+                    <input class="form-control" id="input-user-name" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      請輸入正確的收件人姓名
+                    </div>
                   </div>
                   <div class="mb-4">
                     <label for="input-user-phone-num" class="form-label">
                       聯絡電話
                     </label>
-                    <input class="form-control" id="input-user-phone-num" placeholder="">
+                    <input class="form-control" id="input-user-phone-num" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      請輸入正確的電話號碼
+                    </div>
                   </div>
                   <div class="mb-4">
                     <label for="input-user-email" class="form-label">連絡信箱</label>
-                    <input class="form-control is-invalid" id="input-user-email" aria-describedby="input-user-emailFeedback" required="">
-                    <div id="input-user-emailFeedback" class="invalid-feedback">
+                    <input class="form-control" id="input-user-email" aria-describedby="input-user-emailFeedback" required="">
+                    <div class="invalid-feedback">
                       請輸入正確的郵件格式
                     </div>
                   </div>
@@ -461,17 +470,20 @@
                     <label for="payment-method" class="form-label">
                       付款方式
                     </label>
-                    <select class="form-select" id="payment-method">
+                    <select class="form-select" id="payment-method" required="">
                       <option value="" selected="selected" disabled="disabled">信用卡付款</option>
                       <option value="payment-method-1">付款方式一</option>
                       <option value="payment-method-2">付款方式二</option>
                       <option value="payment-method-3">付款方式三</option>
                     </select>
+                    <div class="invalid-feedback">
+                      請選擇付款方式
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-trengthen btn-primary d-block d-md-inline-block px-12" title="贊助此專案" type="submit">贊助專案</button>
                   </div>
                 </form>
-              </div>
-              <div class="text-center">
-                <a href="#" class="btn btn-trengthen btn-primary d-block d-md-inline-block px-12" title="贊助此專案">贊助專案</a>
               </div>
             </div>
           </section>
@@ -510,5 +522,5 @@
       </div>
     </div>
     
-  <script src="./assets/js/vendor.js?1a27c762"></script><script src="./assets/js/main.js?1a27c762"></script></body>
+  <script src="./assets/js/vendor.js?a8de13c7"></script><script src="./assets/js/main.js?a8de13c7"></script></body>
 </html>
