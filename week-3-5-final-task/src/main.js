@@ -36,7 +36,28 @@ function triggerSponsorBtn(){
     sponsorBtn.classList.add('d-none');
   }
 }
-/* 手機版贊助專案按鈕 ---------------------------------------------------------------- */
+/* /手機版贊助專案按鈕 ---------------------------------------------------------------- */
+
+
+/* 驗證 (Validation) ---------------------------------------------------------- */
+/** 自定義樣式
+  * https://bootstrap5.hexschool.com/docs/5.0/forms/validation/#custom-styles
+*/
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})();
+/* /驗證 (Validation) ---------------------------------------------------------- */
 
 
 /* 圖片 ----------------------------------------------------------------------- */
